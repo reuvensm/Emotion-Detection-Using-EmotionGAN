@@ -1,0 +1,78 @@
+2024-03-29 12:10:23,830 - INFO - 
+#########
+BYOL Training!!!
+#########
+2024-03-29 12:10:23,831 - INFO - Args parsed succesfully
+2024-03-29 12:10:23,831 - INFO - Params: Namespace(epochs=50, exp_name='byol', fine_tune=True, net_name='resnet18')
+2024-03-29 12:10:24,181 - INFO - Model for BYOL was initialized and sent to cuda:0
+2024-03-29 12:10:25,049 - INFO - All data has been loaded
+2024-03-29 12:10:25,050 - INFO - Got hyper parametrs for current model:
+2024-03-29 12:10:25,050 - INFO - batch size=128
+2024-03-29 12:10:25,050 - INFO - Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    initial_lr: 0.0002
+    lr: 0.0002
+    maximize: False
+    weight_decay: 2e-05
+)
+2024-03-29 12:10:25,050 - INFO - <torch.optim.lr_scheduler.CosineAnnealingLR object at 0x7f20b2163f10>
+2024-03-29 12:10:25,051 - INFO - DataLoader initialized
+2024-03-29 12:10:25,051 - INFO - HyperParams initiliazed, starting training...
+2024-03-29 12:12:10,674 - INFO - Epoch: 0 | Loss: -168.7270 | Epoch Time: 105.54 secs
+2024-03-29 12:13:54,957 - INFO - Epoch: 1 | Loss: -207.6505 | Epoch Time: 104.18 secs
+2024-03-29 12:15:39,799 - INFO - Epoch: 2 | Loss: -213.4090 | Epoch Time: 104.74 secs
+2024-03-29 12:17:24,692 - INFO - Epoch: 3 | Loss: -215.4415 | Epoch Time: 104.79 secs
+2024-03-29 12:19:09,375 - INFO - Epoch: 4 | Loss: -216.6245 | Epoch Time: 104.59 secs
+2024-03-29 12:20:54,033 - INFO - Epoch: 5 | Loss: -217.4701 | Epoch Time: 104.56 secs
+2024-03-29 12:22:38,623 - INFO - Epoch: 6 | Loss: -218.1102 | Epoch Time: 104.49 secs
+2024-03-29 12:24:23,692 - INFO - Epoch: 7 | Loss: -218.5303 | Epoch Time: 104.97 secs
+2024-03-29 12:26:08,447 - INFO - Epoch: 8 | Loss: -218.8110 | Epoch Time: 104.66 secs
+2024-03-29 12:27:53,031 - INFO - Epoch: 9 | Loss: -218.9815 | Epoch Time: 104.48 secs
+2024-03-29 12:29:37,759 - INFO - Epoch: 10 | Loss: -219.1540 | Epoch Time: 104.63 secs
+2024-03-29 12:31:23,968 - INFO - Epoch: 11 | Loss: -219.1543 | Epoch Time: 106.11 secs
+2024-03-29 12:33:11,931 - INFO - Epoch: 12 | Loss: -219.4717 | Epoch Time: 107.86 secs
+2024-03-29 12:35:00,560 - INFO - Epoch: 13 | Loss: -219.7782 | Epoch Time: 108.53 secs
+2024-03-29 12:36:47,911 - INFO - Epoch: 14 | Loss: -220.4233 | Epoch Time: 107.25 secs
+2024-03-29 12:38:35,250 - INFO - Epoch: 15 | Loss: -220.8751 | Epoch Time: 107.24 secs
+2024-03-29 12:40:23,819 - INFO - Epoch: 16 | Loss: -221.0935 | Epoch Time: 108.47 secs
+2024-03-29 12:42:12,071 - INFO - Epoch: 17 | Loss: -221.3321 | Epoch Time: 108.15 secs
+2024-03-29 12:44:00,750 - INFO - Epoch: 18 | Loss: -221.7684 | Epoch Time: 108.58 secs
+2024-03-29 12:45:46,533 - INFO - Epoch: 19 | Loss: -221.7597 | Epoch Time: 105.68 secs
+2024-03-29 12:47:35,526 - INFO - Epoch: 20 | Loss: -222.0160 | Epoch Time: 108.89 secs
+2024-03-29 12:49:22,711 - INFO - Epoch: 21 | Loss: -222.3440 | Epoch Time: 107.09 secs
+2024-03-29 12:51:10,524 - INFO - Epoch: 22 | Loss: -222.2408 | Epoch Time: 107.71 secs
+2024-03-29 12:52:57,860 - INFO - Epoch: 23 | Loss: -222.4047 | Epoch Time: 107.24 secs
+2024-03-29 12:54:45,069 - INFO - Epoch: 24 | Loss: -222.4581 | Epoch Time: 107.11 secs
+2024-03-29 12:56:33,516 - INFO - Epoch: 25 | Loss: -222.6665 | Epoch Time: 108.35 secs
+2024-03-29 12:58:22,201 - INFO - Epoch: 26 | Loss: -222.8303 | Epoch Time: 108.59 secs
+2024-03-29 13:00:09,859 - INFO - Epoch: 27 | Loss: -222.8843 | Epoch Time: 107.56 secs
+2024-03-29 13:01:56,442 - INFO - Epoch: 28 | Loss: -223.0697 | Epoch Time: 106.48 secs
+2024-03-29 13:03:44,492 - INFO - Epoch: 29 | Loss: -223.2239 | Epoch Time: 107.95 secs
+2024-03-29 13:05:33,481 - INFO - Epoch: 30 | Loss: -223.2196 | Epoch Time: 108.89 secs
+2024-03-29 13:07:22,292 - INFO - Epoch: 31 | Loss: -223.1650 | Epoch Time: 108.71 secs
+2024-03-29 13:09:10,505 - INFO - Epoch: 32 | Loss: -223.2002 | Epoch Time: 108.11 secs
+2024-03-29 13:10:58,865 - INFO - Epoch: 33 | Loss: -223.4192 | Epoch Time: 108.26 secs
+2024-03-29 13:12:46,972 - INFO - Epoch: 34 | Loss: -223.4141 | Epoch Time: 108.01 secs
+2024-03-29 13:14:33,834 - INFO - Epoch: 35 | Loss: -223.3994 | Epoch Time: 106.76 secs
+2024-03-29 13:16:19,970 - INFO - Epoch: 36 | Loss: -223.4497 | Epoch Time: 106.04 secs
+2024-03-29 13:18:08,401 - INFO - Epoch: 37 | Loss: -223.5085 | Epoch Time: 108.33 secs
+2024-03-29 13:19:56,309 - INFO - Epoch: 38 | Loss: -223.4050 | Epoch Time: 107.81 secs
+2024-03-29 13:21:44,844 - INFO - Epoch: 39 | Loss: -223.4586 | Epoch Time: 108.44 secs
+2024-03-29 13:23:32,566 - INFO - Epoch: 40 | Loss: -223.4799 | Epoch Time: 107.62 secs
+2024-03-29 13:25:27,147 - INFO - Epoch: 41 | Loss: -223.4513 | Epoch Time: 114.48 secs
+2024-03-29 13:27:17,290 - INFO - Epoch: 42 | Loss: -223.5093 | Epoch Time: 110.04 secs
+2024-03-29 13:29:08,814 - INFO - Epoch: 43 | Loss: -223.5416 | Epoch Time: 111.43 secs
+2024-03-29 13:31:00,045 - INFO - Epoch: 44 | Loss: -223.4884 | Epoch Time: 111.13 secs
+2024-03-29 13:32:51,171 - INFO - Epoch: 45 | Loss: -223.5802 | Epoch Time: 111.03 secs
+2024-03-29 13:34:43,040 - INFO - Epoch: 46 | Loss: -223.5309 | Epoch Time: 111.77 secs
+2024-03-29 13:36:34,205 - INFO - Epoch: 47 | Loss: -223.5472 | Epoch Time: 111.06 secs
+2024-03-29 13:38:25,481 - INFO - Epoch: 48 | Loss: -223.5857 | Epoch Time: 111.18 secs
+2024-03-29 13:40:15,466 - INFO - Epoch: 49 | Loss: -223.4750 | Epoch Time: 109.89 secs
+2024-03-29 13:40:17,111 - INFO - Train BYOL Ended!

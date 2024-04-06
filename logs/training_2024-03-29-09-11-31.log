@@ -1,0 +1,39 @@
+2024-03-29 09:11:31,196 - INFO - Args parsed succesfully
+2024-03-29 09:11:31,196 - INFO - Params: Namespace(emotion_transform_prob=0.0, epochs=100, exp_name='Regular_New_Transforms_Features_Extract', fine_tune=False, net_name='resnet18', use_expanded_dataset=False)
+2024-03-29 09:11:31,515 - INFO - Model was initialized and sent to cuda:0
+2024-03-29 09:11:33,155 - INFO - All data has been loaded
+2024-03-29 09:11:33,155 - INFO - Got hyper parametrs for current model:
+2024-03-29 09:11:33,155 - INFO - batch size=128
+2024-03-29 09:11:33,156 - INFO - Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    initial_lr: 0.0002
+    lr: 0.0002
+    maximize: False
+    weight_decay: 2e-05
+)
+2024-03-29 09:11:33,156 - INFO - <torch.optim.lr_scheduler.CosineAnnealingLR object at 0x7f90999a09d0>
+2024-03-29 09:11:33,156 - INFO - DataLoaders initialized
+2024-03-29 09:11:33,156 - INFO - HyperParams initiliazed, starting training...
+2024-03-29 09:13:35,991 - INFO - Epoch: 1 | Loss: 0.0142 | Validation accuracy: 28.950% | Epoch Time: 122.83 secs
+2024-03-29 09:15:39,530 - INFO - Epoch: 2 | Loss: 0.0136 | Validation accuracy: 32.210% | Epoch Time: 123.25 secs
+2024-03-29 09:17:43,544 - INFO - Epoch: 3 | Loss: 0.0133 | Validation accuracy: 35.525% | Epoch Time: 123.74 secs
+2024-03-29 09:19:47,885 - INFO - Epoch: 4 | Loss: 0.0131 | Validation accuracy: 34.522% | Epoch Time: 124.08 secs
+2024-03-29 09:23:43,141 - INFO - Epoch: 5 | Loss: 0.0130 | Training accuracy: 33.853% | Validation accuracy: 36.779% | Epoch Time: 235.12 secs
+2024-03-29 09:25:47,228 - INFO - Epoch: 6 | Loss: 0.0130 | Validation accuracy: 37.838% | Epoch Time: 123.81 secs
+2024-03-29 09:27:50,941 - INFO - Epoch: 7 | Loss: 0.0129 | Validation accuracy: 36.974% | Epoch Time: 123.45 secs
+2024-03-29 09:29:54,345 - INFO - Epoch: 8 | Loss: 0.0129 | Validation accuracy: 37.699% | Epoch Time: 123.27 secs
+2024-03-29 09:31:57,939 - INFO - Epoch: 9 | Loss: 0.0128 | Validation accuracy: 38.451% | Epoch Time: 123.45 secs
+2024-03-29 09:35:56,935 - INFO - Epoch: 10 | Loss: 0.0128 | Training accuracy: 35.424% | Validation accuracy: 38.841% | Epoch Time: 238.71 secs
+2024-03-29 09:38:04,070 - INFO - Epoch: 11 | Loss: 0.0128 | Validation accuracy: 38.284% | Epoch Time: 126.87 secs
+2024-03-29 09:40:08,854 - INFO - Epoch: 12 | Loss: 0.0127 | Validation accuracy: 37.503% | Epoch Time: 124.65 secs
+2024-03-29 09:42:15,923 - INFO - Epoch: 13 | Loss: 0.0128 | Validation accuracy: 38.144% | Epoch Time: 126.94 secs
+2024-03-29 09:44:22,891 - INFO - Epoch: 14 | Loss: 0.0127 | Validation accuracy: 39.482% | Epoch Time: 126.83 secs
+2024-03-29 09:48:23,855 - INFO - Epoch: 15 | Loss: 0.0127 | Training accuracy: 36.065% | Validation accuracy: 39.426% | Epoch Time: 240.68 secs
+2024-03-29 09:50:30,682 - INFO - Epoch: 16 | Loss: 0.0127 | Validation accuracy: 38.674% | Epoch Time: 126.69 secs

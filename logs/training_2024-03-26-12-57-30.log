@@ -1,0 +1,426 @@
+2024-03-26 12:57:30,483 - INFO - Args parsed succesfully
+2024-03-26 12:57:30,483 - INFO - Params: Namespace(emotion_transform_prob=0.0, epochs=100, exp_name='Regular_2', net_name='resnet50')
+2024-03-26 12:57:31,357 - INFO - Model was initialized and sent to cuda:0
+2024-03-26 12:57:34,014 - INFO - All data has been loaded
+2024-03-26 12:57:34,016 - INFO - Got hyper parametrs for current model:
+2024-03-26 12:57:34,016 - INFO - batch size=128
+2024-03-26 12:57:34,016 - INFO - Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    initial_lr: 0.0006
+    lr: 0.0006
+    maximize: False
+    weight_decay: 0
+)
+2024-03-26 12:57:34,016 - INFO - <torch.optim.lr_scheduler.CosineAnnealingLR object at 0x7f49392761c0>
+2024-03-26 12:57:34,017 - INFO - DataLoaders initialized
+2024-03-26 12:57:34,017 - INFO - HyperParams initiliazed, starting training...
+2024-03-26 12:57:34,567 - INFO - 	 In epoch number 1, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.55 secs
+2024-03-26 12:57:48,940 - INFO - 	 In epoch number 1, finished iteration 100 | Running loss: 0.005 | Time from start of this epoch: 14.92 secs
+2024-03-26 12:58:02,971 - INFO - 	 In epoch number 1, finished iteration 200 | Running loss: 0.009 | Time from start of this epoch: 28.95 secs
+2024-03-26 12:58:06,254 - INFO - Finished epoch number 1 | Loss: 0.010139913918801022 | Epoch Time: 32.2357702255249
+2024-03-26 12:58:06,365 - INFO - 	 In epoch number 2, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.11 secs
+2024-03-26 12:58:21,875 - INFO - 	 In epoch number 2, finished iteration 100 | Running loss: 0.004 | Time from start of this epoch: 15.62 secs
+2024-03-26 12:58:35,864 - INFO - 	 In epoch number 2, finished iteration 200 | Running loss: 0.007 | Time from start of this epoch: 29.61 secs
+2024-03-26 12:58:39,032 - INFO - Finished epoch number 2 | Loss: 0.007888015760988928 | Epoch Time: 32.77716040611267
+2024-03-26 12:58:39,218 - INFO - 	 In epoch number 3, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.19 secs
+2024-03-26 12:58:53,445 - INFO - 	 In epoch number 3, finished iteration 100 | Running loss: 0.003 | Time from start of this epoch: 14.41 secs
+2024-03-26 12:59:08,360 - INFO - 	 In epoch number 3, finished iteration 200 | Running loss: 0.006 | Time from start of this epoch: 29.33 secs
+2024-03-26 12:59:11,669 - INFO - Finished epoch number 3 | Loss: 0.006888602558416884 | Epoch Time: 32.63593602180481
+2024-03-26 12:59:11,799 - INFO - 	 In epoch number 4, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.13 secs
+2024-03-26 12:59:25,780 - INFO - 	 In epoch number 4, finished iteration 100 | Running loss: 0.003 | Time from start of this epoch: 14.11 secs
+2024-03-26 12:59:39,684 - INFO - 	 In epoch number 4, finished iteration 200 | Running loss: 0.005 | Time from start of this epoch: 28.01 secs
+2024-03-26 12:59:43,063 - INFO - Finished epoch number 4 | Loss: 0.006090762377773533 | Epoch Time: 31.393983602523804
+2024-03-26 12:59:43,189 - INFO - 	 In epoch number 5, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.12 secs
+2024-03-26 12:59:56,961 - INFO - 	 In epoch number 5, finished iteration 100 | Running loss: 0.002 | Time from start of this epoch: 13.90 secs
+2024-03-26 13:00:10,982 - INFO - 	 In epoch number 5, finished iteration 200 | Running loss: 0.005 | Time from start of this epoch: 27.92 secs
+2024-03-26 13:00:35,660 - INFO - Epoch: 5 | Loss: 0.0054 | Training accuracy: 80.407% | Validation accuracy: 63.249% | Epoch Time: 52.60 secs
+2024-03-26 13:00:39,363 - INFO - 	 In epoch number 6, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.19 secs
+2024-03-26 13:00:53,734 - INFO - 	 In epoch number 6, finished iteration 100 | Running loss: 0.002 | Time from start of this epoch: 14.56 secs
+2024-03-26 13:01:09,467 - INFO - 	 In epoch number 6, finished iteration 200 | Running loss: 0.004 | Time from start of this epoch: 30.29 secs
+2024-03-26 13:01:13,495 - INFO - Finished epoch number 6 | Loss: 0.004690041955085653 | Epoch Time: 34.316712379455566
+2024-03-26 13:01:13,647 - INFO - 	 In epoch number 7, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.15 secs
+2024-03-26 13:01:28,741 - INFO - 	 In epoch number 7, finished iteration 100 | Running loss: 0.002 | Time from start of this epoch: 15.25 secs
+2024-03-26 13:01:42,878 - INFO - 	 In epoch number 7, finished iteration 200 | Running loss: 0.004 | Time from start of this epoch: 29.38 secs
+2024-03-26 13:01:46,200 - INFO - Finished epoch number 7 | Loss: 0.0040564303490064945 | Epoch Time: 32.70413398742676
+2024-03-26 13:01:46,386 - INFO - 	 In epoch number 8, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.19 secs
+2024-03-26 13:02:00,314 - INFO - 	 In epoch number 8, finished iteration 100 | Running loss: 0.001 | Time from start of this epoch: 14.11 secs
+2024-03-26 13:02:14,321 - INFO - 	 In epoch number 8, finished iteration 200 | Running loss: 0.003 | Time from start of this epoch: 28.12 secs
+2024-03-26 13:02:17,562 - INFO - Finished epoch number 8 | Loss: 0.0034349549318697806 | Epoch Time: 31.360872507095337
+2024-03-26 13:02:17,720 - INFO - 	 In epoch number 9, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:02:31,747 - INFO - 	 In epoch number 9, finished iteration 100 | Running loss: 0.001 | Time from start of this epoch: 14.18 secs
+2024-03-26 13:02:41,845 - INFO - 	 In epoch number 9, finished iteration 200 | Running loss: 0.003 | Time from start of this epoch: 24.28 secs
+2024-03-26 13:02:44,216 - INFO - Finished epoch number 9 | Loss: 0.002888905048669329 | Epoch Time: 26.653444290161133
+2024-03-26 13:02:44,317 - INFO - 	 In epoch number 10, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.10 secs
+2024-03-26 13:02:54,480 - INFO - 	 In epoch number 10, finished iteration 100 | Running loss: 0.001 | Time from start of this epoch: 10.26 secs
+2024-03-26 13:03:04,672 - INFO - 	 In epoch number 10, finished iteration 200 | Running loss: 0.002 | Time from start of this epoch: 20.46 secs
+2024-03-26 13:03:25,678 - INFO - Epoch: 10 | Loss: 0.0023 | Training accuracy: 92.372% | Validation accuracy: 63.750% | Epoch Time: 41.46 secs
+2024-03-26 13:03:29,528 - INFO - 	 In epoch number 11, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.17 secs
+2024-03-26 13:03:44,714 - INFO - 	 In epoch number 11, finished iteration 100 | Running loss: 0.001 | Time from start of this epoch: 15.36 secs
+2024-03-26 13:03:58,166 - INFO - 	 In epoch number 11, finished iteration 200 | Running loss: 0.002 | Time from start of this epoch: 28.81 secs
+2024-03-26 13:04:01,644 - INFO - Finished epoch number 11 | Loss: 0.0019942688661257948 | Epoch Time: 32.286057233810425
+2024-03-26 13:04:01,785 - INFO - 	 In epoch number 12, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.14 secs
+2024-03-26 13:04:16,595 - INFO - 	 In epoch number 12, finished iteration 100 | Running loss: 0.001 | Time from start of this epoch: 14.95 secs
+2024-03-26 13:04:30,796 - INFO - 	 In epoch number 12, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 29.15 secs
+2024-03-26 13:04:33,878 - INFO - Finished epoch number 12 | Loss: 0.0015846165392444428 | Epoch Time: 32.23397922515869
+2024-03-26 13:04:34,004 - INFO - 	 In epoch number 13, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.12 secs
+2024-03-26 13:04:47,109 - INFO - 	 In epoch number 13, finished iteration 100 | Running loss: 0.001 | Time from start of this epoch: 13.23 secs
+2024-03-26 13:05:00,423 - INFO - 	 In epoch number 13, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 26.54 secs
+2024-03-26 13:05:03,554 - INFO - Finished epoch number 13 | Loss: 0.0012850885084284614 | Epoch Time: 29.675010681152344
+2024-03-26 13:05:03,684 - INFO - 	 In epoch number 14, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.13 secs
+2024-03-26 13:05:17,160 - INFO - 	 In epoch number 14, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 13.60 secs
+2024-03-26 13:05:31,606 - INFO - 	 In epoch number 14, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 28.05 secs
+2024-03-26 13:05:34,969 - INFO - Finished epoch number 14 | Loss: 0.0010178901014814574 | Epoch Time: 31.41374683380127
+2024-03-26 13:05:35,107 - INFO - 	 In epoch number 15, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.14 secs
+2024-03-26 13:05:49,815 - INFO - 	 In epoch number 15, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.85 secs
+2024-03-26 13:06:05,814 - INFO - 	 In epoch number 15, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 30.84 secs
+2024-03-26 13:06:32,318 - INFO - Epoch: 15 | Loss: 0.0007 | Training accuracy: 97.788% | Validation accuracy: 65.784% | Epoch Time: 57.35 secs
+2024-03-26 13:06:36,329 - INFO - 	 In epoch number 16, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.17 secs
+2024-03-26 13:06:51,183 - INFO - 	 In epoch number 16, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.03 secs
+2024-03-26 13:07:05,711 - INFO - 	 In epoch number 16, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 29.55 secs
+2024-03-26 13:07:09,080 - INFO - Finished epoch number 16 | Loss: 0.0006124446250096297 | Epoch Time: 32.92411184310913
+2024-03-26 13:07:09,236 - INFO - 	 In epoch number 17, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:07:24,758 - INFO - 	 In epoch number 17, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.68 secs
+2024-03-26 13:07:39,312 - INFO - 	 In epoch number 17, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.23 secs
+2024-03-26 13:07:43,070 - INFO - Finished epoch number 17 | Loss: 0.00048232507429714133 | Epoch Time: 33.98931574821472
+2024-03-26 13:07:43,245 - INFO - 	 In epoch number 18, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.17 secs
+2024-03-26 13:07:58,535 - INFO - 	 In epoch number 18, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.46 secs
+2024-03-26 13:08:13,753 - INFO - 	 In epoch number 18, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.68 secs
+2024-03-26 13:08:17,500 - INFO - Finished epoch number 18 | Loss: 0.0003894639221477805 | Epoch Time: 34.42871141433716
+2024-03-26 13:08:17,667 - INFO - 	 In epoch number 19, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.17 secs
+2024-03-26 13:08:33,622 - INFO - 	 In epoch number 19, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 16.12 secs
+2024-03-26 13:08:48,633 - INFO - 	 In epoch number 19, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 31.13 secs
+2024-03-26 13:08:52,094 - INFO - Finished epoch number 19 | Loss: 0.0002773494826569873 | Epoch Time: 34.59328508377075
+2024-03-26 13:08:52,248 - INFO - 	 In epoch number 20, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.15 secs
+2024-03-26 13:09:06,773 - INFO - 	 In epoch number 20, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.68 secs
+2024-03-26 13:09:23,257 - INFO - 	 In epoch number 20, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 31.16 secs
+2024-03-26 13:09:49,062 - INFO - Epoch: 20 | Loss: 0.0002 | Training accuracy: 99.436% | Validation accuracy: 66.592% | Epoch Time: 56.97 secs
+2024-03-26 13:09:52,872 - INFO - 	 In epoch number 21, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.17 secs
+2024-03-26 13:10:08,426 - INFO - 	 In epoch number 21, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.72 secs
+2024-03-26 13:10:24,103 - INFO - 	 In epoch number 21, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 31.40 secs
+2024-03-26 13:10:27,961 - INFO - Finished epoch number 21 | Loss: 0.00016842961625100893 | Epoch Time: 35.258525371551514
+2024-03-26 13:10:28,123 - INFO - 	 In epoch number 22, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:10:43,870 - INFO - 	 In epoch number 22, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.91 secs
+2024-03-26 13:10:59,686 - INFO - 	 In epoch number 22, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 31.72 secs
+2024-03-26 13:11:03,226 - INFO - Finished epoch number 22 | Loss: 0.00013256082458388435 | Epoch Time: 35.26453471183777
+2024-03-26 13:11:03,381 - INFO - 	 In epoch number 23, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.15 secs
+2024-03-26 13:11:17,968 - INFO - 	 In epoch number 23, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.74 secs
+2024-03-26 13:11:31,417 - INFO - 	 In epoch number 23, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 28.19 secs
+2024-03-26 13:11:35,198 - INFO - Finished epoch number 23 | Loss: 0.00010015546545178892 | Epoch Time: 31.97149920463562
+2024-03-26 13:11:35,342 - INFO - 	 In epoch number 24, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.14 secs
+2024-03-26 13:11:49,224 - INFO - 	 In epoch number 24, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.02 secs
+2024-03-26 13:12:03,283 - INFO - 	 In epoch number 24, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 28.08 secs
+2024-03-26 13:12:06,438 - INFO - Finished epoch number 24 | Loss: 9.057061160211817e-05 | Epoch Time: 31.23860812187195
+2024-03-26 13:12:06,560 - INFO - 	 In epoch number 25, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.12 secs
+2024-03-26 13:12:20,475 - INFO - 	 In epoch number 25, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.04 secs
+2024-03-26 13:12:35,308 - INFO - 	 In epoch number 25, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 28.87 secs
+2024-03-26 13:12:58,237 - INFO - Epoch: 25 | Loss: 0.0001 | Training accuracy: 99.770% | Validation accuracy: 67.122% | Epoch Time: 51.80 secs
+2024-03-26 13:13:02,043 - INFO - 	 In epoch number 26, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.18 secs
+2024-03-26 13:13:17,795 - INFO - 	 In epoch number 26, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.93 secs
+2024-03-26 13:13:33,124 - INFO - 	 In epoch number 26, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 31.26 secs
+2024-03-26 13:13:36,470 - INFO - Finished epoch number 26 | Loss: 5.7567360337204736e-05 | Epoch Time: 34.60933256149292
+2024-03-26 13:13:36,633 - INFO - 	 In epoch number 27, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:13:50,515 - INFO - 	 In epoch number 27, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.04 secs
+2024-03-26 13:14:04,922 - INFO - 	 In epoch number 27, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 28.45 secs
+2024-03-26 13:14:08,310 - INFO - Finished epoch number 27 | Loss: 5.2031273989969795e-05 | Epoch Time: 31.839796543121338
+2024-03-26 13:14:08,489 - INFO - 	 In epoch number 28, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.18 secs
+2024-03-26 13:14:22,712 - INFO - 	 In epoch number 28, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.40 secs
+2024-03-26 13:14:35,651 - INFO - 	 In epoch number 28, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 27.34 secs
+2024-03-26 13:14:38,405 - INFO - Finished epoch number 28 | Loss: 5.1997920212073544e-05 | Epoch Time: 30.09361219406128
+2024-03-26 13:14:38,559 - INFO - 	 In epoch number 29, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.15 secs
+2024-03-26 13:14:53,847 - INFO - 	 In epoch number 29, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.44 secs
+2024-03-26 13:15:05,998 - INFO - 	 In epoch number 29, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 27.59 secs
+2024-03-26 13:15:09,728 - INFO - Finished epoch number 29 | Loss: 4.595114120167379e-05 | Epoch Time: 31.322075843811035
+2024-03-26 13:15:09,904 - INFO - 	 In epoch number 30, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.18 secs
+2024-03-26 13:15:21,871 - INFO - 	 In epoch number 30, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 12.14 secs
+2024-03-26 13:15:33,044 - INFO - 	 In epoch number 30, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 23.32 secs
+2024-03-26 13:15:56,941 - INFO - Epoch: 30 | Loss: 0.0000 | Training accuracy: 99.763% | Validation accuracy: 67.846% | Epoch Time: 47.21 secs
+2024-03-26 13:15:59,977 - INFO - 	 In epoch number 31, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.14 secs
+2024-03-26 13:16:11,753 - INFO - 	 In epoch number 31, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 11.91 secs
+2024-03-26 13:16:22,994 - INFO - 	 In epoch number 31, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 23.15 secs
+2024-03-26 13:16:25,587 - INFO - Finished epoch number 31 | Loss: 4.786947639970958e-05 | Epoch Time: 25.744872093200684
+2024-03-26 13:16:25,707 - INFO - 	 In epoch number 32, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.12 secs
+2024-03-26 13:16:36,905 - INFO - 	 In epoch number 32, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 11.32 secs
+2024-03-26 13:16:48,163 - INFO - 	 In epoch number 32, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 22.58 secs
+2024-03-26 13:16:50,712 - INFO - Finished epoch number 32 | Loss: 4.416054387524585e-05 | Epoch Time: 25.12469792366028
+2024-03-26 13:16:50,842 - INFO - 	 In epoch number 33, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.13 secs
+2024-03-26 13:17:02,315 - INFO - 	 In epoch number 33, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 11.60 secs
+2024-03-26 13:17:15,379 - INFO - 	 In epoch number 33, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 24.67 secs
+2024-03-26 13:17:18,578 - INFO - Finished epoch number 33 | Loss: 4.543353381195329e-05 | Epoch Time: 27.86520552635193
+2024-03-26 13:17:18,742 - INFO - 	 In epoch number 34, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:17:32,134 - INFO - 	 In epoch number 34, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 13.55 secs
+2024-03-26 13:17:45,564 - INFO - 	 In epoch number 34, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 26.98 secs
+2024-03-26 13:17:49,096 - INFO - Finished epoch number 34 | Loss: 4.5765084673353344e-05 | Epoch Time: 30.51650357246399
+2024-03-26 13:17:49,234 - INFO - 	 In epoch number 35, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.14 secs
+2024-03-26 13:18:04,779 - INFO - 	 In epoch number 35, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.68 secs
+2024-03-26 13:18:19,301 - INFO - 	 In epoch number 35, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.20 secs
+2024-03-26 13:18:44,277 - INFO - Epoch: 35 | Loss: 0.0001 | Training accuracy: 99.798% | Validation accuracy: 67.595% | Epoch Time: 55.18 secs
+2024-03-26 13:18:46,488 - INFO - 	 In epoch number 36, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.18 secs
+2024-03-26 13:19:01,523 - INFO - 	 In epoch number 36, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.21 secs
+2024-03-26 13:19:16,534 - INFO - 	 In epoch number 36, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.23 secs
+2024-03-26 13:19:20,268 - INFO - Finished epoch number 36 | Loss: 5.1296669707048076e-05 | Epoch Time: 33.959821939468384
+2024-03-26 13:19:20,428 - INFO - 	 In epoch number 37, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:19:36,363 - INFO - 	 In epoch number 37, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 16.09 secs
+2024-03-26 13:19:52,388 - INFO - 	 In epoch number 37, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 32.12 secs
+2024-03-26 13:19:55,871 - INFO - Finished epoch number 37 | Loss: 7.163168133703508e-05 | Epoch Time: 35.60270810127258
+2024-03-26 13:19:56,023 - INFO - 	 In epoch number 38, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.15 secs
+2024-03-26 13:20:09,662 - INFO - 	 In epoch number 38, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 13.79 secs
+2024-03-26 13:20:23,228 - INFO - 	 In epoch number 38, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 27.36 secs
+2024-03-26 13:20:26,280 - INFO - Finished epoch number 38 | Loss: 8.599596178001815e-05 | Epoch Time: 30.40781307220459
+2024-03-26 13:20:26,421 - INFO - 	 In epoch number 39, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.14 secs
+2024-03-26 13:20:40,521 - INFO - 	 In epoch number 39, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.24 secs
+2024-03-26 13:20:54,600 - INFO - 	 In epoch number 39, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 28.32 secs
+2024-03-26 13:20:58,167 - INFO - Finished epoch number 39 | Loss: 0.00017421469865984152 | Epoch Time: 31.88662815093994
+2024-03-26 13:20:58,338 - INFO - 	 In epoch number 40, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.17 secs
+2024-03-26 13:21:13,280 - INFO - 	 In epoch number 40, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.11 secs
+2024-03-26 13:21:26,826 - INFO - 	 In epoch number 40, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 28.66 secs
+2024-03-26 13:21:49,682 - INFO - Epoch: 40 | Loss: 0.0002 | Training accuracy: 99.188% | Validation accuracy: 66.509% | Epoch Time: 51.51 secs
+2024-03-26 13:21:52,261 - INFO - 	 In epoch number 41, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.17 secs
+2024-03-26 13:22:07,229 - INFO - 	 In epoch number 41, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.13 secs
+2024-03-26 13:22:22,122 - INFO - 	 In epoch number 41, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.03 secs
+2024-03-26 13:22:25,562 - INFO - Finished epoch number 41 | Loss: 0.0002784721280082766 | Epoch Time: 33.46596050262451
+2024-03-26 13:22:25,698 - INFO - 	 In epoch number 42, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.14 secs
+2024-03-26 13:22:42,024 - INFO - 	 In epoch number 42, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 16.46 secs
+2024-03-26 13:22:56,813 - INFO - 	 In epoch number 42, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 31.25 secs
+2024-03-26 13:23:00,302 - INFO - Finished epoch number 42 | Loss: 0.0003818401864741273 | Epoch Time: 34.739023208618164
+2024-03-26 13:23:00,446 - INFO - 	 In epoch number 43, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.14 secs
+2024-03-26 13:23:14,440 - INFO - 	 In epoch number 43, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.14 secs
+2024-03-26 13:23:28,412 - INFO - 	 In epoch number 43, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 28.11 secs
+2024-03-26 13:23:32,017 - INFO - Finished epoch number 43 | Loss: 0.0003619862172230074 | Epoch Time: 31.713926553726196
+2024-03-26 13:23:32,165 - INFO - 	 In epoch number 44, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.15 secs
+2024-03-26 13:23:46,360 - INFO - 	 In epoch number 44, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.34 secs
+2024-03-26 13:24:01,003 - INFO - 	 In epoch number 44, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 28.99 secs
+2024-03-26 13:24:04,411 - INFO - Finished epoch number 44 | Loss: 0.000435115448283719 | Epoch Time: 32.39349889755249
+2024-03-26 13:24:04,563 - INFO - 	 In epoch number 45, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.15 secs
+2024-03-26 13:24:18,954 - INFO - 	 In epoch number 45, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.54 secs
+2024-03-26 13:24:34,547 - INFO - 	 In epoch number 45, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.14 secs
+2024-03-26 13:24:59,276 - INFO - Epoch: 45 | Loss: 0.0006 | Training accuracy: 97.889% | Validation accuracy: 66.119% | Epoch Time: 54.86 secs
+2024-03-26 13:25:01,140 - INFO - 	 In epoch number 46, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:25:16,402 - INFO - 	 In epoch number 46, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.42 secs
+2024-03-26 13:25:31,140 - INFO - 	 In epoch number 46, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 30.16 secs
+2024-03-26 13:25:34,698 - INFO - Finished epoch number 46 | Loss: 0.0006650199796973968 | Epoch Time: 33.72091293334961
+2024-03-26 13:25:34,850 - INFO - 	 In epoch number 47, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.15 secs
+2024-03-26 13:25:49,617 - INFO - 	 In epoch number 47, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.92 secs
+2024-03-26 13:26:04,454 - INFO - 	 In epoch number 47, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 29.75 secs
+2024-03-26 13:26:07,791 - INFO - Finished epoch number 47 | Loss: 0.0007942357968351236 | Epoch Time: 33.09188985824585
+2024-03-26 13:26:07,942 - INFO - 	 In epoch number 48, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.15 secs
+2024-03-26 13:26:23,933 - INFO - 	 In epoch number 48, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 16.14 secs
+2024-03-26 13:26:40,158 - INFO - 	 In epoch number 48, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 32.37 secs
+2024-03-26 13:26:43,875 - INFO - Finished epoch number 48 | Loss: 0.0006867871321020191 | Epoch Time: 36.08289837837219
+2024-03-26 13:26:44,038 - INFO - 	 In epoch number 49, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:26:59,874 - INFO - 	 In epoch number 49, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 16.00 secs
+2024-03-26 13:27:14,726 - INFO - 	 In epoch number 49, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 30.85 secs
+2024-03-26 13:27:18,078 - INFO - Finished epoch number 49 | Loss: 0.0007721156346034537 | Epoch Time: 34.20223784446716
+2024-03-26 13:27:18,212 - INFO - 	 In epoch number 50, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.13 secs
+2024-03-26 13:27:32,676 - INFO - 	 In epoch number 50, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.60 secs
+2024-03-26 13:27:47,233 - INFO - 	 In epoch number 50, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 29.15 secs
+2024-03-26 13:28:12,643 - INFO - Epoch: 50 | Loss: 0.0008 | Training accuracy: 96.569% | Validation accuracy: 64.001% | Epoch Time: 54.56 secs
+2024-03-26 13:28:14,777 - INFO - 	 In epoch number 51, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:28:30,073 - INFO - 	 In epoch number 51, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.46 secs
+2024-03-26 13:28:44,794 - INFO - 	 In epoch number 51, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 30.18 secs
+2024-03-26 13:28:47,658 - INFO - Finished epoch number 51 | Loss: 0.0009962829655355086 | Epoch Time: 33.043001890182495
+2024-03-26 13:28:47,801 - INFO - 	 In epoch number 52, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.14 secs
+2024-03-26 13:29:00,590 - INFO - 	 In epoch number 52, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 12.93 secs
+2024-03-26 13:29:14,887 - INFO - 	 In epoch number 52, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 27.23 secs
+2024-03-26 13:29:18,247 - INFO - Finished epoch number 52 | Loss: 0.0010263019181800165 | Epoch Time: 30.589027404785156
+2024-03-26 13:29:18,422 - INFO - 	 In epoch number 53, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.17 secs
+2024-03-26 13:29:32,664 - INFO - 	 In epoch number 53, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.42 secs
+2024-03-26 13:29:46,571 - INFO - 	 In epoch number 53, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 28.32 secs
+2024-03-26 13:29:50,109 - INFO - Finished epoch number 53 | Loss: 0.001009797083938702 | Epoch Time: 31.860341787338257
+2024-03-26 13:29:50,268 - INFO - 	 In epoch number 54, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:30:04,145 - INFO - 	 In epoch number 54, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.04 secs
+2024-03-26 13:30:18,040 - INFO - 	 In epoch number 54, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 27.93 secs
+2024-03-26 13:30:21,135 - INFO - Finished epoch number 54 | Loss: 0.0008956694509590751 | Epoch Time: 31.025370121002197
+2024-03-26 13:30:21,268 - INFO - 	 In epoch number 55, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.13 secs
+2024-03-26 13:30:36,624 - INFO - 	 In epoch number 55, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.49 secs
+2024-03-26 13:30:51,129 - INFO - 	 In epoch number 55, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 29.99 secs
+2024-03-26 13:31:16,774 - INFO - Epoch: 55 | Loss: 0.0010 | Training accuracy: 95.952% | Validation accuracy: 64.642% | Epoch Time: 55.64 secs
+2024-03-26 13:31:18,539 - INFO - 	 In epoch number 56, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:31:33,136 - INFO - 	 In epoch number 56, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.75 secs
+2024-03-26 13:31:47,255 - INFO - 	 In epoch number 56, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 28.87 secs
+2024-03-26 13:31:50,702 - INFO - Finished epoch number 56 | Loss: 0.000982019602224709 | Epoch Time: 32.31856369972229
+2024-03-26 13:31:50,849 - INFO - 	 In epoch number 57, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.15 secs
+2024-03-26 13:32:06,890 - INFO - 	 In epoch number 57, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 16.19 secs
+2024-03-26 13:32:22,694 - INFO - 	 In epoch number 57, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 31.99 secs
+2024-03-26 13:32:26,475 - INFO - Finished epoch number 57 | Loss: 0.0010204835549262156 | Epoch Time: 35.77226281166077
+2024-03-26 13:32:26,595 - INFO - 	 In epoch number 58, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.12 secs
+2024-03-26 13:32:39,962 - INFO - 	 In epoch number 58, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 13.49 secs
+2024-03-26 13:32:53,527 - INFO - 	 In epoch number 58, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 27.05 secs
+2024-03-26 13:32:57,367 - INFO - Finished epoch number 58 | Loss: 0.0009384572448467086 | Epoch Time: 30.891164541244507
+2024-03-26 13:32:57,521 - INFO - 	 In epoch number 59, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.15 secs
+2024-03-26 13:33:11,130 - INFO - 	 In epoch number 59, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 13.76 secs
+2024-03-26 13:33:24,838 - INFO - 	 In epoch number 59, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 27.47 secs
+2024-03-26 13:33:28,116 - INFO - Finished epoch number 59 | Loss: 0.0009354011601489092 | Epoch Time: 30.749234437942505
+2024-03-26 13:33:28,244 - INFO - 	 In epoch number 60, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.13 secs
+2024-03-26 13:33:41,769 - INFO - 	 In epoch number 60, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 13.65 secs
+2024-03-26 13:33:56,345 - INFO - 	 In epoch number 60, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 28.23 secs
+2024-03-26 13:34:18,425 - INFO - Epoch: 60 | Loss: 0.0010 | Training accuracy: 95.402% | Validation accuracy: 62.301% | Epoch Time: 50.31 secs
+2024-03-26 13:34:20,108 - INFO - 	 In epoch number 61, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:34:34,650 - INFO - 	 In epoch number 61, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.70 secs
+2024-03-26 13:34:48,326 - INFO - 	 In epoch number 61, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 28.38 secs
+2024-03-26 13:34:51,535 - INFO - Finished epoch number 61 | Loss: 0.000896364052609435 | Epoch Time: 31.586644649505615
+2024-03-26 13:34:51,698 - INFO - 	 In epoch number 62, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:35:05,163 - INFO - 	 In epoch number 62, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 13.63 secs
+2024-03-26 13:35:19,852 - INFO - 	 In epoch number 62, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 28.32 secs
+2024-03-26 13:35:23,569 - INFO - Finished epoch number 62 | Loss: 0.0008787484859995859 | Epoch Time: 32.03341794013977
+2024-03-26 13:35:23,713 - INFO - 	 In epoch number 63, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.14 secs
+2024-03-26 13:35:37,663 - INFO - 	 In epoch number 63, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.09 secs
+2024-03-26 13:35:53,064 - INFO - 	 In epoch number 63, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 29.49 secs
+2024-03-26 13:35:56,752 - INFO - Finished epoch number 63 | Loss: 0.0008859734867673719 | Epoch Time: 33.18219971656799
+2024-03-26 13:35:56,855 - INFO - 	 In epoch number 64, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.10 secs
+2024-03-26 13:36:10,375 - INFO - 	 In epoch number 64, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 13.62 secs
+2024-03-26 13:36:24,244 - INFO - 	 In epoch number 64, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 27.49 secs
+2024-03-26 13:36:27,847 - INFO - Finished epoch number 64 | Loss: 0.0008059650605840367 | Epoch Time: 31.094810724258423
+2024-03-26 13:36:28,007 - INFO - 	 In epoch number 65, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:36:44,240 - INFO - 	 In epoch number 65, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 16.39 secs
+2024-03-26 13:36:59,931 - INFO - 	 In epoch number 65, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 32.08 secs
+2024-03-26 13:37:24,764 - INFO - Epoch: 65 | Loss: 0.0007 | Training accuracy: 97.496% | Validation accuracy: 65.589% | Epoch Time: 56.92 secs
+2024-03-26 13:37:26,552 - INFO - 	 In epoch number 66, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.17 secs
+2024-03-26 13:37:41,007 - INFO - 	 In epoch number 66, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.63 secs
+2024-03-26 13:37:56,153 - INFO - 	 In epoch number 66, finished iteration 200 | Running loss: 0.001 | Time from start of this epoch: 29.77 secs
+2024-03-26 13:37:59,443 - INFO - Finished epoch number 66 | Loss: 0.0007122659325789639 | Epoch Time: 33.063945055007935
+2024-03-26 13:37:59,602 - INFO - 	 In epoch number 67, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:38:14,935 - INFO - 	 In epoch number 67, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.49 secs
+2024-03-26 13:38:28,404 - INFO - 	 In epoch number 67, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 28.96 secs
+2024-03-26 13:38:31,578 - INFO - Finished epoch number 67 | Loss: 0.0005617388553473368 | Epoch Time: 32.13365173339844
+2024-03-26 13:38:31,709 - INFO - 	 In epoch number 68, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.13 secs
+2024-03-26 13:38:46,054 - INFO - 	 In epoch number 68, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.48 secs
+2024-03-26 13:39:00,047 - INFO - 	 In epoch number 68, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 28.47 secs
+2024-03-26 13:39:03,238 - INFO - Finished epoch number 68 | Loss: 0.0005311705511060872 | Epoch Time: 31.65883994102478
+2024-03-26 13:39:03,367 - INFO - 	 In epoch number 69, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.13 secs
+2024-03-26 13:39:18,944 - INFO - 	 In epoch number 69, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.71 secs
+2024-03-26 13:39:32,841 - INFO - 	 In epoch number 69, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 29.60 secs
+2024-03-26 13:39:35,981 - INFO - Finished epoch number 69 | Loss: 0.0004928234211739513 | Epoch Time: 32.742830991744995
+2024-03-26 13:39:36,107 - INFO - 	 In epoch number 70, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.13 secs
+2024-03-26 13:39:50,395 - INFO - 	 In epoch number 70, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.41 secs
+2024-03-26 13:40:06,152 - INFO - 	 In epoch number 70, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.17 secs
+2024-03-26 13:40:29,249 - INFO - Epoch: 70 | Loss: 0.0004 | Training accuracy: 98.568% | Validation accuracy: 66.119% | Epoch Time: 53.27 secs
+2024-03-26 13:40:31,126 - INFO - 	 In epoch number 71, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:40:46,625 - INFO - 	 In epoch number 71, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.66 secs
+2024-03-26 13:41:01,531 - INFO - 	 In epoch number 71, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.57 secs
+2024-03-26 13:41:05,328 - INFO - Finished epoch number 71 | Loss: 0.00039321799413848476 | Epoch Time: 34.365750551223755
+2024-03-26 13:41:05,498 - INFO - 	 In epoch number 72, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.17 secs
+2024-03-26 13:41:21,521 - INFO - 	 In epoch number 72, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 16.19 secs
+2024-03-26 13:41:35,861 - INFO - 	 In epoch number 72, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.53 secs
+2024-03-26 13:41:39,752 - INFO - Finished epoch number 72 | Loss: 0.00029798866756059394 | Epoch Time: 34.42217421531677
+2024-03-26 13:41:39,917 - INFO - 	 In epoch number 73, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:41:55,630 - INFO - 	 In epoch number 73, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.88 secs
+2024-03-26 13:42:09,558 - INFO - 	 In epoch number 73, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 29.80 secs
+2024-03-26 13:42:13,153 - INFO - Finished epoch number 73 | Loss: 0.00028532259929556035 | Epoch Time: 33.40010356903076
+2024-03-26 13:42:13,299 - INFO - 	 In epoch number 74, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.14 secs
+2024-03-26 13:42:27,046 - INFO - 	 In epoch number 74, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 13.89 secs
+2024-03-26 13:42:41,243 - INFO - 	 In epoch number 74, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 28.09 secs
+2024-03-26 13:42:44,462 - INFO - Finished epoch number 74 | Loss: 0.0002711610333960488 | Epoch Time: 31.30785083770752
+2024-03-26 13:42:44,607 - INFO - 	 In epoch number 75, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.14 secs
+2024-03-26 13:43:00,836 - INFO - 	 In epoch number 75, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 16.37 secs
+2024-03-26 13:43:16,550 - INFO - 	 In epoch number 75, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 32.09 secs
+2024-03-26 13:43:41,353 - INFO - Epoch: 75 | Loss: 0.0002 | Training accuracy: 99.269% | Validation accuracy: 65.868% | Epoch Time: 56.89 secs
+2024-03-26 13:43:43,326 - INFO - 	 In epoch number 76, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.17 secs
+2024-03-26 13:43:58,993 - INFO - 	 In epoch number 76, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.83 secs
+2024-03-26 13:44:13,111 - INFO - 	 In epoch number 76, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 29.95 secs
+2024-03-26 13:44:16,356 - INFO - Finished epoch number 76 | Loss: 0.0001643718612076557 | Epoch Time: 33.19555044174194
+2024-03-26 13:44:16,521 - INFO - 	 In epoch number 77, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:44:30,170 - INFO - 	 In epoch number 77, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 13.81 secs
+2024-03-26 13:44:43,786 - INFO - 	 In epoch number 77, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 27.43 secs
+2024-03-26 13:44:47,204 - INFO - Finished epoch number 77 | Loss: 0.00012270122238053777 | Epoch Time: 30.84684681892395
+2024-03-26 13:44:47,363 - INFO - 	 In epoch number 78, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:45:02,140 - INFO - 	 In epoch number 78, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.94 secs
+2024-03-26 13:45:15,812 - INFO - 	 In epoch number 78, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 28.61 secs
+2024-03-26 13:45:19,004 - INFO - Finished epoch number 78 | Loss: 0.00011292525616265146 | Epoch Time: 31.79957604408264
+2024-03-26 13:45:19,165 - INFO - 	 In epoch number 79, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:45:34,578 - INFO - 	 In epoch number 79, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.57 secs
+2024-03-26 13:45:49,525 - INFO - 	 In epoch number 79, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.52 secs
+2024-03-26 13:45:52,637 - INFO - Finished epoch number 79 | Loss: 9.438453543413308e-05 | Epoch Time: 33.631985902786255
+2024-03-26 13:45:52,786 - INFO - 	 In epoch number 80, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.15 secs
+2024-03-26 13:46:06,168 - INFO - 	 In epoch number 80, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 13.53 secs
+2024-03-26 13:46:20,517 - INFO - 	 In epoch number 80, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 27.88 secs
+2024-03-26 13:46:42,759 - INFO - Epoch: 80 | Loss: 0.0001 | Training accuracy: 99.718% | Validation accuracy: 66.732% | Epoch Time: 50.12 secs
+2024-03-26 13:46:44,264 - INFO - 	 In epoch number 81, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.14 secs
+2024-03-26 13:46:59,485 - INFO - 	 In epoch number 81, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.36 secs
+2024-03-26 13:47:14,582 - INFO - 	 In epoch number 81, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.46 secs
+2024-03-26 13:47:17,713 - INFO - Finished epoch number 81 | Loss: 6.44819528263522e-05 | Epoch Time: 33.591532945632935
+2024-03-26 13:47:17,867 - INFO - 	 In epoch number 82, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.15 secs
+2024-03-26 13:47:34,009 - INFO - 	 In epoch number 82, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 16.30 secs
+2024-03-26 13:47:50,297 - INFO - 	 In epoch number 82, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 32.58 secs
+2024-03-26 13:47:53,772 - INFO - Finished epoch number 82 | Loss: 6.146980019817335e-05 | Epoch Time: 36.05802273750305
+2024-03-26 13:47:53,923 - INFO - 	 In epoch number 83, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.15 secs
+2024-03-26 13:48:07,873 - INFO - 	 In epoch number 83, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.10 secs
+2024-03-26 13:48:21,481 - INFO - 	 In epoch number 83, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 27.71 secs
+2024-03-26 13:48:24,703 - INFO - Finished epoch number 83 | Loss: 5.6782207806292444e-05 | Epoch Time: 30.93036699295044
+2024-03-26 13:48:24,838 - INFO - 	 In epoch number 84, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.13 secs
+2024-03-26 13:48:39,659 - INFO - 	 In epoch number 84, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.95 secs
+2024-03-26 13:48:53,705 - INFO - 	 In epoch number 84, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 29.00 secs
+2024-03-26 13:48:57,151 - INFO - Finished epoch number 84 | Loss: 5.003451202109196e-05 | Epoch Time: 32.446953773498535
+2024-03-26 13:48:57,315 - INFO - 	 In epoch number 85, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:49:13,054 - INFO - 	 In epoch number 85, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.90 secs
+2024-03-26 13:49:27,488 - INFO - 	 In epoch number 85, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.34 secs
+2024-03-26 13:49:50,381 - INFO - Epoch: 85 | Loss: 0.0000 | Training accuracy: 99.812% | Validation accuracy: 66.425% | Epoch Time: 53.23 secs
+2024-03-26 13:49:52,578 - INFO - 	 In epoch number 86, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.17 secs
+2024-03-26 13:50:06,600 - INFO - 	 In epoch number 86, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.20 secs
+2024-03-26 13:50:21,718 - INFO - 	 In epoch number 86, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 29.32 secs
+2024-03-26 13:50:25,507 - INFO - Finished epoch number 86 | Loss: 3.6849255202718386e-05 | Epoch Time: 33.104387044906616
+2024-03-26 13:50:25,690 - INFO - 	 In epoch number 87, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.18 secs
+2024-03-26 13:50:41,938 - INFO - 	 In epoch number 87, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 16.43 secs
+2024-03-26 13:50:56,816 - INFO - 	 In epoch number 87, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 31.31 secs
+2024-03-26 13:51:00,453 - INFO - Finished epoch number 87 | Loss: 3.867903620394245e-05 | Epoch Time: 34.94422960281372
+2024-03-26 13:51:00,621 - INFO - 	 In epoch number 88, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.17 secs
+2024-03-26 13:51:15,870 - INFO - 	 In epoch number 88, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.42 secs
+2024-03-26 13:51:30,695 - INFO - 	 In epoch number 88, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.24 secs
+2024-03-26 13:51:34,551 - INFO - Finished epoch number 88 | Loss: 3.436417020140266e-05 | Epoch Time: 34.097047328948975
+2024-03-26 13:51:34,729 - INFO - 	 In epoch number 89, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.18 secs
+2024-03-26 13:51:50,826 - INFO - 	 In epoch number 89, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 16.27 secs
+2024-03-26 13:52:06,613 - INFO - 	 In epoch number 89, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 32.06 secs
+2024-03-26 13:52:10,333 - INFO - Finished epoch number 89 | Loss: 3.152461554144305e-05 | Epoch Time: 35.78086280822754
+2024-03-26 13:52:10,493 - INFO - 	 In epoch number 90, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.16 secs
+2024-03-26 13:52:25,383 - INFO - 	 In epoch number 90, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.05 secs
+2024-03-26 13:52:38,973 - INFO - 	 In epoch number 90, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 28.64 secs
+2024-03-26 13:53:03,673 - INFO - Epoch: 90 | Loss: 0.0000 | Training accuracy: 99.801% | Validation accuracy: 66.592% | Epoch Time: 53.34 secs
+2024-03-26 13:53:05,391 - INFO - 	 In epoch number 91, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.17 secs
+2024-03-26 13:53:20,650 - INFO - 	 In epoch number 91, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.43 secs
+2024-03-26 13:53:34,203 - INFO - 	 In epoch number 91, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 28.98 secs
+2024-03-26 13:53:37,358 - INFO - Finished epoch number 91 | Loss: 3.23964571706726e-05 | Epoch Time: 32.133687019348145
+2024-03-26 13:53:37,494 - INFO - 	 In epoch number 92, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.14 secs
+2024-03-26 13:53:52,263 - INFO - 	 In epoch number 92, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.90 secs
+2024-03-26 13:54:08,612 - INFO - 	 In epoch number 92, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 31.25 secs
+2024-03-26 13:54:12,471 - INFO - Finished epoch number 92 | Loss: 3.241023612355922e-05 | Epoch Time: 35.11209297180176
+2024-03-26 13:54:12,652 - INFO - 	 In epoch number 93, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.18 secs
+2024-03-26 13:54:28,747 - INFO - 	 In epoch number 93, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 16.28 secs
+2024-03-26 13:54:42,968 - INFO - 	 In epoch number 93, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.50 secs
+2024-03-26 13:54:46,264 - INFO - Finished epoch number 93 | Loss: 3.183827712137425e-05 | Epoch Time: 33.792338371276855
+2024-03-26 13:54:46,408 - INFO - 	 In epoch number 94, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.14 secs
+2024-03-26 13:55:01,764 - INFO - 	 In epoch number 94, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.50 secs
+2024-03-26 13:55:17,004 - INFO - 	 In epoch number 94, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.74 secs
+2024-03-26 13:55:20,143 - INFO - Finished epoch number 94 | Loss: 3.399487694316158e-05 | Epoch Time: 33.878010511398315
+2024-03-26 13:55:20,284 - INFO - 	 In epoch number 95, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.14 secs
+2024-03-26 13:55:34,064 - INFO - 	 In epoch number 95, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 13.92 secs
+2024-03-26 13:55:48,354 - INFO - 	 In epoch number 95, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 28.21 secs
+2024-03-26 13:56:11,650 - INFO - Epoch: 95 | Loss: 0.0000 | Training accuracy: 99.829% | Validation accuracy: 66.509% | Epoch Time: 51.51 secs
+2024-03-26 13:56:13,885 - INFO - 	 In epoch number 96, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.18 secs
+2024-03-26 13:56:27,932 - INFO - 	 In epoch number 96, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 14.22 secs
+2024-03-26 13:56:41,509 - INFO - 	 In epoch number 96, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 27.80 secs
+2024-03-26 13:56:44,685 - INFO - Finished epoch number 96 | Loss: 3.5369062391878474e-05 | Epoch Time: 30.97606110572815
+2024-03-26 13:56:44,788 - INFO - 	 In epoch number 97, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.10 secs
+2024-03-26 13:56:59,830 - INFO - 	 In epoch number 97, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.14 secs
+2024-03-26 13:57:14,721 - INFO - 	 In epoch number 97, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.04 secs
+2024-03-26 13:57:18,373 - INFO - Finished epoch number 97 | Loss: 3.970504836022702e-05 | Epoch Time: 33.687055349349976
+2024-03-26 13:57:18,509 - INFO - 	 In epoch number 98, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.14 secs
+2024-03-26 13:57:32,272 - INFO - 	 In epoch number 98, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 13.90 secs
+2024-03-26 13:57:47,681 - INFO - 	 In epoch number 98, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 29.31 secs
+2024-03-26 13:57:51,071 - INFO - Finished epoch number 98 | Loss: 4.5656616314303606e-05 | Epoch Time: 32.69790434837341
+2024-03-26 13:57:51,175 - INFO - 	 In epoch number 99, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.10 secs
+2024-03-26 13:58:06,687 - INFO - 	 In epoch number 99, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.61 secs
+2024-03-26 13:58:21,293 - INFO - 	 In epoch number 99, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.22 secs
+2024-03-26 13:58:24,890 - INFO - Finished epoch number 99 | Loss: 6.166483658240436e-05 | Epoch Time: 33.81793808937073
+2024-03-26 13:58:25,075 - INFO - 	 In epoch number 100, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.18 secs
+2024-03-26 13:58:40,266 - INFO - 	 In epoch number 100, finished iteration 100 | Running loss: 0.000 | Time from start of this epoch: 15.38 secs
+2024-03-26 13:58:54,917 - INFO - 	 In epoch number 100, finished iteration 200 | Running loss: 0.000 | Time from start of this epoch: 30.03 secs
+2024-03-26 13:59:22,963 - INFO - Epoch: 100 | Loss: 0.0001 | Training accuracy: 99.453% | Validation accuracy: 66.174% | Epoch Time: 58.07 secs
+2024-03-26 13:59:24,681 - INFO - Train Ended!
+2024-03-26 13:59:24,681 - INFO - Saving train statistics
+2024-03-26 13:59:24,847 - INFO - Save statistics done!

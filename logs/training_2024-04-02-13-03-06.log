@@ -1,0 +1,327 @@
+2024-04-02 13:03:06,635 - INFO - Args parsed succesfully
+2024-04-02 13:03:06,636 - INFO - Params: Namespace(emotion_transform_prob=0.0, epochs=100, exp_name='Regular_New_Transforms_No_Normalization', fine_tune=False, load_byol=False, net_name='dino_v2', use_expanded_dataset=False, verbose=True)
+2024-04-02 13:03:06,838 - INFO - using MLP layer as FFN
+2024-04-02 13:03:07,396 - INFO - Model was initialized and sent to cuda:0
+2024-04-02 13:03:07,397 - INFO - EmotionNet(
+  (nn_model): DinoVisionTransformer(
+    (patch_embed): PatchEmbed(
+      (proj): Conv2d(3, 384, kernel_size=(14, 14), stride=(14, 14))
+      (norm): Identity()
+    )
+    (blocks): ModuleList(
+      (0-11): 12 x NestedTensorBlock(
+        (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (attn): MemEffAttention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=True)
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls1): LayerScale()
+        (drop_path1): Identity()
+        (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls2): LayerScale()
+        (drop_path2): Identity()
+      )
+    )
+    (norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+    (head): Linear(in_features=384, out_features=7, bias=True)
+  )
+)
+2024-04-02 13:03:09,144 - INFO - All data has been loaded
+2024-04-02 13:03:09,146 - INFO - Got hyper parametrs for current model:
+2024-04-02 13:03:09,146 - INFO - batch size=128
+2024-04-02 13:03:09,146 - INFO - Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    initial_lr: 0.0002
+    lr: 0.0002
+    maximize: False
+    weight_decay: 2e-05
+)
+2024-04-02 13:03:09,146 - INFO - <torch.optim.lr_scheduler.CosineAnnealingLR object at 0x7f65d2422be0>
+2024-04-02 13:03:09,146 - INFO - DataLoaders initialized
+2024-04-02 13:03:09,146 - INFO - HyperParams initiliazed, starting training...
+2024-04-02 13:03:09,806 - INFO - 	 In epoch number 1, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.66 secs
+2024-04-02 13:03:10,231 - INFO - 	 In epoch number 1, finished iteration 1 | Running loss: 0.000 | Time from start of this epoch: 1.08 secs
+2024-04-02 13:03:10,628 - INFO - 	 In epoch number 1, finished iteration 2 | Running loss: 0.000 | Time from start of this epoch: 1.48 secs
+2024-04-02 13:03:11,032 - INFO - 	 In epoch number 1, finished iteration 3 | Running loss: 0.000 | Time from start of this epoch: 1.89 secs
+2024-04-02 13:03:11,425 - INFO - 	 In epoch number 1, finished iteration 4 | Running loss: 0.000 | Time from start of this epoch: 2.28 secs
+2024-04-02 13:03:11,825 - INFO - 	 In epoch number 1, finished iteration 5 | Running loss: 0.001 | Time from start of this epoch: 2.68 secs
+2024-04-02 13:03:12,226 - INFO - 	 In epoch number 1, finished iteration 6 | Running loss: 0.001 | Time from start of this epoch: 3.08 secs
+2024-04-02 13:03:12,608 - INFO - 	 In epoch number 1, finished iteration 7 | Running loss: 0.001 | Time from start of this epoch: 3.46 secs
+2024-04-02 13:03:13,005 - INFO - 	 In epoch number 1, finished iteration 8 | Running loss: 0.001 | Time from start of this epoch: 3.86 secs
+2024-04-02 13:03:13,412 - INFO - 	 In epoch number 1, finished iteration 9 | Running loss: 0.001 | Time from start of this epoch: 4.26 secs
+2024-04-02 13:03:13,817 - INFO - 	 In epoch number 1, finished iteration 10 | Running loss: 0.001 | Time from start of this epoch: 4.67 secs
+2024-04-02 13:03:14,205 - INFO - 	 In epoch number 1, finished iteration 11 | Running loss: 0.001 | Time from start of this epoch: 5.06 secs
+2024-04-02 13:03:14,626 - INFO - 	 In epoch number 1, finished iteration 12 | Running loss: 0.001 | Time from start of this epoch: 5.48 secs
+2024-04-02 13:03:15,020 - INFO - 	 In epoch number 1, finished iteration 13 | Running loss: 0.001 | Time from start of this epoch: 5.87 secs
+2024-04-02 13:03:15,416 - INFO - 	 In epoch number 1, finished iteration 14 | Running loss: 0.001 | Time from start of this epoch: 6.27 secs
+2024-04-02 13:03:15,793 - INFO - 	 In epoch number 1, finished iteration 15 | Running loss: 0.001 | Time from start of this epoch: 6.65 secs
+2024-04-02 13:03:16,194 - INFO - 	 In epoch number 1, finished iteration 16 | Running loss: 0.001 | Time from start of this epoch: 7.05 secs
+2024-04-02 13:03:16,596 - INFO - 	 In epoch number 1, finished iteration 17 | Running loss: 0.001 | Time from start of this epoch: 7.45 secs
+2024-04-02 13:03:16,985 - INFO - 	 In epoch number 1, finished iteration 18 | Running loss: 0.002 | Time from start of this epoch: 7.84 secs
+2024-04-02 13:03:17,385 - INFO - 	 In epoch number 1, finished iteration 19 | Running loss: 0.002 | Time from start of this epoch: 8.24 secs
+2024-04-02 13:03:17,776 - INFO - 	 In epoch number 1, finished iteration 20 | Running loss: 0.002 | Time from start of this epoch: 8.63 secs
+2024-04-02 13:03:18,171 - INFO - 	 In epoch number 1, finished iteration 21 | Running loss: 0.002 | Time from start of this epoch: 9.02 secs
+2024-04-02 13:03:18,560 - INFO - 	 In epoch number 1, finished iteration 22 | Running loss: 0.002 | Time from start of this epoch: 9.41 secs
+2024-04-02 13:03:18,951 - INFO - 	 In epoch number 1, finished iteration 23 | Running loss: 0.002 | Time from start of this epoch: 9.80 secs
+2024-04-02 13:03:19,349 - INFO - 	 In epoch number 1, finished iteration 24 | Running loss: 0.002 | Time from start of this epoch: 10.20 secs
+2024-04-02 13:03:19,748 - INFO - 	 In epoch number 1, finished iteration 25 | Running loss: 0.002 | Time from start of this epoch: 10.60 secs
+2024-04-02 13:03:20,188 - INFO - 	 In epoch number 1, finished iteration 26 | Running loss: 0.002 | Time from start of this epoch: 11.04 secs
+2024-04-02 13:03:20,571 - INFO - 	 In epoch number 1, finished iteration 27 | Running loss: 0.002 | Time from start of this epoch: 11.42 secs
+2024-04-02 13:03:21,024 - INFO - 	 In epoch number 1, finished iteration 28 | Running loss: 0.002 | Time from start of this epoch: 11.88 secs
+2024-04-02 13:03:21,426 - INFO - 	 In epoch number 1, finished iteration 29 | Running loss: 0.002 | Time from start of this epoch: 12.28 secs
+2024-04-02 13:03:21,814 - INFO - 	 In epoch number 1, finished iteration 30 | Running loss: 0.002 | Time from start of this epoch: 12.67 secs
+2024-04-02 13:03:22,203 - INFO - 	 In epoch number 1, finished iteration 31 | Running loss: 0.002 | Time from start of this epoch: 13.06 secs
+2024-04-02 13:03:22,604 - INFO - 	 In epoch number 1, finished iteration 32 | Running loss: 0.002 | Time from start of this epoch: 13.46 secs
+2024-04-02 13:03:22,994 - INFO - 	 In epoch number 1, finished iteration 33 | Running loss: 0.003 | Time from start of this epoch: 13.85 secs
+2024-04-02 13:03:23,396 - INFO - 	 In epoch number 1, finished iteration 34 | Running loss: 0.003 | Time from start of this epoch: 14.25 secs
+2024-04-02 13:03:23,789 - INFO - 	 In epoch number 1, finished iteration 35 | Running loss: 0.003 | Time from start of this epoch: 14.64 secs
+2024-04-02 13:03:24,204 - INFO - 	 In epoch number 1, finished iteration 36 | Running loss: 0.003 | Time from start of this epoch: 15.06 secs
+2024-04-02 13:03:24,598 - INFO - 	 In epoch number 1, finished iteration 37 | Running loss: 0.003 | Time from start of this epoch: 15.45 secs
+2024-04-02 13:03:24,981 - INFO - 	 In epoch number 1, finished iteration 38 | Running loss: 0.003 | Time from start of this epoch: 15.83 secs
+2024-04-02 13:03:25,385 - INFO - 	 In epoch number 1, finished iteration 39 | Running loss: 0.003 | Time from start of this epoch: 16.24 secs
+2024-04-02 13:03:25,800 - INFO - 	 In epoch number 1, finished iteration 40 | Running loss: 0.003 | Time from start of this epoch: 16.65 secs
+2024-04-02 13:03:26,202 - INFO - 	 In epoch number 1, finished iteration 41 | Running loss: 0.003 | Time from start of this epoch: 17.06 secs
+2024-04-02 13:03:26,586 - INFO - 	 In epoch number 1, finished iteration 42 | Running loss: 0.003 | Time from start of this epoch: 17.44 secs
+2024-04-02 13:03:26,984 - INFO - 	 In epoch number 1, finished iteration 43 | Running loss: 0.003 | Time from start of this epoch: 17.84 secs
+2024-04-02 13:03:27,378 - INFO - 	 In epoch number 1, finished iteration 44 | Running loss: 0.003 | Time from start of this epoch: 18.23 secs
+2024-04-02 13:03:27,781 - INFO - 	 In epoch number 1, finished iteration 45 | Running loss: 0.003 | Time from start of this epoch: 18.63 secs
+2024-04-02 13:03:28,179 - INFO - 	 In epoch number 1, finished iteration 46 | Running loss: 0.003 | Time from start of this epoch: 19.03 secs
+2024-04-02 13:03:28,581 - INFO - 	 In epoch number 1, finished iteration 47 | Running loss: 0.003 | Time from start of this epoch: 19.43 secs
+2024-04-02 13:03:28,988 - INFO - 	 In epoch number 1, finished iteration 48 | Running loss: 0.004 | Time from start of this epoch: 19.84 secs
+2024-04-02 13:03:29,393 - INFO - 	 In epoch number 1, finished iteration 49 | Running loss: 0.004 | Time from start of this epoch: 20.25 secs
+2024-04-02 13:03:29,783 - INFO - 	 In epoch number 1, finished iteration 50 | Running loss: 0.004 | Time from start of this epoch: 20.64 secs
+2024-04-02 13:03:30,203 - INFO - 	 In epoch number 1, finished iteration 51 | Running loss: 0.004 | Time from start of this epoch: 21.06 secs
+2024-04-02 13:03:30,608 - INFO - 	 In epoch number 1, finished iteration 52 | Running loss: 0.004 | Time from start of this epoch: 21.46 secs
+2024-04-02 13:03:31,003 - INFO - 	 In epoch number 1, finished iteration 53 | Running loss: 0.004 | Time from start of this epoch: 21.86 secs
+2024-04-02 13:03:31,386 - INFO - 	 In epoch number 1, finished iteration 54 | Running loss: 0.004 | Time from start of this epoch: 22.24 secs
+2024-04-02 13:03:31,801 - INFO - 	 In epoch number 1, finished iteration 55 | Running loss: 0.004 | Time from start of this epoch: 22.65 secs
+2024-04-02 13:03:32,209 - INFO - 	 In epoch number 1, finished iteration 56 | Running loss: 0.004 | Time from start of this epoch: 23.06 secs
+2024-04-02 13:03:32,618 - INFO - 	 In epoch number 1, finished iteration 57 | Running loss: 0.004 | Time from start of this epoch: 23.47 secs
+2024-04-02 13:03:33,009 - INFO - 	 In epoch number 1, finished iteration 58 | Running loss: 0.004 | Time from start of this epoch: 23.86 secs
+2024-04-02 13:03:33,423 - INFO - 	 In epoch number 1, finished iteration 59 | Running loss: 0.004 | Time from start of this epoch: 24.28 secs
+2024-04-02 13:03:33,833 - INFO - 	 In epoch number 1, finished iteration 60 | Running loss: 0.004 | Time from start of this epoch: 24.69 secs
+2024-04-02 13:03:34,229 - INFO - 	 In epoch number 1, finished iteration 61 | Running loss: 0.004 | Time from start of this epoch: 25.08 secs
+2024-04-02 13:03:34,620 - INFO - 	 In epoch number 1, finished iteration 62 | Running loss: 0.004 | Time from start of this epoch: 25.47 secs
+2024-04-02 13:03:35,024 - INFO - 	 In epoch number 1, finished iteration 63 | Running loss: 0.004 | Time from start of this epoch: 25.88 secs
+2024-04-02 13:03:35,428 - INFO - 	 In epoch number 1, finished iteration 64 | Running loss: 0.005 | Time from start of this epoch: 26.28 secs
+2024-04-02 13:03:35,833 - INFO - 	 In epoch number 1, finished iteration 65 | Running loss: 0.005 | Time from start of this epoch: 26.69 secs
+2024-04-02 13:03:36,236 - INFO - 	 In epoch number 1, finished iteration 66 | Running loss: 0.005 | Time from start of this epoch: 27.09 secs
+2024-04-02 13:03:36,651 - INFO - 	 In epoch number 1, finished iteration 67 | Running loss: 0.005 | Time from start of this epoch: 27.50 secs
+2024-04-02 13:03:37,049 - INFO - 	 In epoch number 1, finished iteration 68 | Running loss: 0.005 | Time from start of this epoch: 27.90 secs
+2024-04-02 13:03:37,435 - INFO - 	 In epoch number 1, finished iteration 69 | Running loss: 0.005 | Time from start of this epoch: 28.29 secs
+2024-04-02 13:03:37,825 - INFO - 	 In epoch number 1, finished iteration 70 | Running loss: 0.005 | Time from start of this epoch: 28.68 secs
+2024-04-02 13:03:38,248 - INFO - 	 In epoch number 1, finished iteration 71 | Running loss: 0.005 | Time from start of this epoch: 29.10 secs
+2024-04-02 13:03:38,650 - INFO - 	 In epoch number 1, finished iteration 72 | Running loss: 0.005 | Time from start of this epoch: 29.50 secs
+2024-04-02 13:03:39,041 - INFO - 	 In epoch number 1, finished iteration 73 | Running loss: 0.005 | Time from start of this epoch: 29.89 secs
+2024-04-02 13:03:39,455 - INFO - 	 In epoch number 1, finished iteration 74 | Running loss: 0.005 | Time from start of this epoch: 30.31 secs
+2024-04-02 13:03:39,872 - INFO - 	 In epoch number 1, finished iteration 75 | Running loss: 0.005 | Time from start of this epoch: 30.73 secs
+2024-04-02 13:03:40,255 - INFO - 	 In epoch number 1, finished iteration 76 | Running loss: 0.005 | Time from start of this epoch: 31.11 secs
+2024-04-02 13:03:40,650 - INFO - 	 In epoch number 1, finished iteration 77 | Running loss: 0.005 | Time from start of this epoch: 31.50 secs
+2024-04-02 13:03:41,051 - INFO - 	 In epoch number 1, finished iteration 78 | Running loss: 0.005 | Time from start of this epoch: 31.90 secs
+2024-04-02 13:03:41,464 - INFO - 	 In epoch number 1, finished iteration 79 | Running loss: 0.005 | Time from start of this epoch: 32.32 secs
+2024-04-02 13:03:41,869 - INFO - 	 In epoch number 1, finished iteration 80 | Running loss: 0.006 | Time from start of this epoch: 32.72 secs
+2024-04-02 13:03:42,272 - INFO - 	 In epoch number 1, finished iteration 81 | Running loss: 0.006 | Time from start of this epoch: 33.12 secs
+2024-04-02 13:03:42,704 - INFO - 	 In epoch number 1, finished iteration 82 | Running loss: 0.006 | Time from start of this epoch: 33.56 secs
+2024-04-02 13:03:43,110 - INFO - 	 In epoch number 1, finished iteration 83 | Running loss: 0.006 | Time from start of this epoch: 33.96 secs
+2024-04-02 13:03:43,516 - INFO - 	 In epoch number 1, finished iteration 84 | Running loss: 0.006 | Time from start of this epoch: 34.37 secs
+2024-04-02 13:03:43,921 - INFO - 	 In epoch number 1, finished iteration 85 | Running loss: 0.006 | Time from start of this epoch: 34.77 secs
+2024-04-02 13:03:44,335 - INFO - 	 In epoch number 1, finished iteration 86 | Running loss: 0.006 | Time from start of this epoch: 35.19 secs
+2024-04-02 13:03:44,751 - INFO - 	 In epoch number 1, finished iteration 87 | Running loss: 0.006 | Time from start of this epoch: 35.60 secs
+2024-04-02 13:03:45,156 - INFO - 	 In epoch number 1, finished iteration 88 | Running loss: 0.006 | Time from start of this epoch: 36.01 secs
+2024-04-02 13:03:45,546 - INFO - 	 In epoch number 1, finished iteration 89 | Running loss: 0.006 | Time from start of this epoch: 36.40 secs
+2024-04-02 13:03:45,937 - INFO - 	 In epoch number 1, finished iteration 90 | Running loss: 0.006 | Time from start of this epoch: 36.79 secs
+2024-04-02 13:03:46,350 - INFO - 	 In epoch number 1, finished iteration 91 | Running loss: 0.006 | Time from start of this epoch: 37.20 secs
+2024-04-02 13:03:46,742 - INFO - 	 In epoch number 1, finished iteration 92 | Running loss: 0.006 | Time from start of this epoch: 37.59 secs
+2024-04-02 13:03:47,135 - INFO - 	 In epoch number 1, finished iteration 93 | Running loss: 0.006 | Time from start of this epoch: 37.99 secs
+2024-04-02 13:03:47,542 - INFO - 	 In epoch number 1, finished iteration 94 | Running loss: 0.006 | Time from start of this epoch: 38.40 secs
+2024-04-02 13:03:47,946 - INFO - 	 In epoch number 1, finished iteration 95 | Running loss: 0.006 | Time from start of this epoch: 38.80 secs
+2024-04-02 13:03:48,359 - INFO - 	 In epoch number 1, finished iteration 96 | Running loss: 0.006 | Time from start of this epoch: 39.21 secs
+2024-04-02 13:03:48,766 - INFO - 	 In epoch number 1, finished iteration 97 | Running loss: 0.007 | Time from start of this epoch: 39.62 secs
+2024-04-02 13:03:49,179 - INFO - 	 In epoch number 1, finished iteration 98 | Running loss: 0.007 | Time from start of this epoch: 40.03 secs
+2024-04-02 13:03:49,582 - INFO - 	 In epoch number 1, finished iteration 99 | Running loss: 0.007 | Time from start of this epoch: 40.44 secs
+2024-04-02 13:03:49,965 - INFO - 	 In epoch number 1, finished iteration 100 | Running loss: 0.007 | Time from start of this epoch: 40.82 secs
+2024-04-02 13:03:50,357 - INFO - 	 In epoch number 1, finished iteration 101 | Running loss: 0.007 | Time from start of this epoch: 41.21 secs
+2024-04-02 13:03:50,765 - INFO - 	 In epoch number 1, finished iteration 102 | Running loss: 0.007 | Time from start of this epoch: 41.62 secs
+2024-04-02 13:03:51,178 - INFO - 	 In epoch number 1, finished iteration 103 | Running loss: 0.007 | Time from start of this epoch: 42.03 secs
+2024-04-02 13:03:51,565 - INFO - 	 In epoch number 1, finished iteration 104 | Running loss: 0.007 | Time from start of this epoch: 42.42 secs
+2024-04-02 13:03:51,972 - INFO - 	 In epoch number 1, finished iteration 105 | Running loss: 0.007 | Time from start of this epoch: 42.83 secs
+2024-04-02 13:03:52,397 - INFO - 	 In epoch number 1, finished iteration 106 | Running loss: 0.007 | Time from start of this epoch: 43.25 secs
+2024-04-02 13:03:52,800 - INFO - 	 In epoch number 1, finished iteration 107 | Running loss: 0.007 | Time from start of this epoch: 43.65 secs
+2024-04-02 13:03:53,206 - INFO - 	 In epoch number 1, finished iteration 108 | Running loss: 0.007 | Time from start of this epoch: 44.06 secs
+2024-04-02 13:03:53,611 - INFO - 	 In epoch number 1, finished iteration 109 | Running loss: 0.007 | Time from start of this epoch: 44.46 secs
+2024-04-02 13:03:54,017 - INFO - 	 In epoch number 1, finished iteration 110 | Running loss: 0.007 | Time from start of this epoch: 44.87 secs
+2024-04-02 13:03:54,429 - INFO - 	 In epoch number 1, finished iteration 111 | Running loss: 0.007 | Time from start of this epoch: 45.28 secs
+2024-04-02 13:03:54,833 - INFO - 	 In epoch number 1, finished iteration 112 | Running loss: 0.007 | Time from start of this epoch: 45.69 secs
+2024-04-02 13:03:55,239 - INFO - 	 In epoch number 1, finished iteration 113 | Running loss: 0.007 | Time from start of this epoch: 46.09 secs
+2024-04-02 13:03:55,640 - INFO - 	 In epoch number 1, finished iteration 114 | Running loss: 0.007 | Time from start of this epoch: 46.49 secs
+2024-04-02 13:03:56,056 - INFO - 	 In epoch number 1, finished iteration 115 | Running loss: 0.008 | Time from start of this epoch: 46.91 secs
+2024-04-02 13:03:56,437 - INFO - 	 In epoch number 1, finished iteration 116 | Running loss: 0.008 | Time from start of this epoch: 47.29 secs
+2024-04-02 13:03:56,841 - INFO - 	 In epoch number 1, finished iteration 117 | Running loss: 0.008 | Time from start of this epoch: 47.69 secs
+2024-04-02 13:03:57,249 - INFO - 	 In epoch number 1, finished iteration 118 | Running loss: 0.008 | Time from start of this epoch: 48.10 secs
+2024-04-02 13:03:57,656 - INFO - 	 In epoch number 1, finished iteration 119 | Running loss: 0.008 | Time from start of this epoch: 48.51 secs
+2024-04-02 13:03:58,045 - INFO - 	 In epoch number 1, finished iteration 120 | Running loss: 0.008 | Time from start of this epoch: 48.90 secs
+2024-04-02 13:03:58,470 - INFO - 	 In epoch number 1, finished iteration 121 | Running loss: 0.008 | Time from start of this epoch: 49.32 secs
+2024-04-02 13:03:58,861 - INFO - 	 In epoch number 1, finished iteration 122 | Running loss: 0.008 | Time from start of this epoch: 49.71 secs
+2024-04-02 13:03:59,267 - INFO - 	 In epoch number 1, finished iteration 123 | Running loss: 0.008 | Time from start of this epoch: 50.12 secs
+2024-04-02 13:03:59,664 - INFO - 	 In epoch number 1, finished iteration 124 | Running loss: 0.008 | Time from start of this epoch: 50.52 secs
+2024-04-02 13:04:00,081 - INFO - 	 In epoch number 1, finished iteration 125 | Running loss: 0.008 | Time from start of this epoch: 50.93 secs
+2024-04-02 13:04:00,478 - INFO - 	 In epoch number 1, finished iteration 126 | Running loss: 0.008 | Time from start of this epoch: 51.33 secs
+2024-04-02 13:04:00,878 - INFO - 	 In epoch number 1, finished iteration 127 | Running loss: 0.008 | Time from start of this epoch: 51.73 secs
+2024-04-02 13:04:01,295 - INFO - 	 In epoch number 1, finished iteration 128 | Running loss: 0.008 | Time from start of this epoch: 52.15 secs
+2024-04-02 13:04:01,714 - INFO - 	 In epoch number 1, finished iteration 129 | Running loss: 0.008 | Time from start of this epoch: 52.57 secs
+2024-04-02 13:04:02,111 - INFO - 	 In epoch number 1, finished iteration 130 | Running loss: 0.008 | Time from start of this epoch: 52.96 secs
+2024-04-02 13:04:02,500 - INFO - 	 In epoch number 1, finished iteration 131 | Running loss: 0.008 | Time from start of this epoch: 53.35 secs
+2024-04-02 13:04:02,923 - INFO - 	 In epoch number 1, finished iteration 132 | Running loss: 0.009 | Time from start of this epoch: 53.78 secs
+2024-04-02 13:04:03,330 - INFO - 	 In epoch number 1, finished iteration 133 | Running loss: 0.009 | Time from start of this epoch: 54.18 secs
+2024-04-02 13:04:03,738 - INFO - 	 In epoch number 1, finished iteration 134 | Running loss: 0.009 | Time from start of this epoch: 54.59 secs
+2024-04-02 13:04:04,128 - INFO - 	 In epoch number 1, finished iteration 135 | Running loss: 0.009 | Time from start of this epoch: 54.98 secs
+2024-04-02 13:04:04,537 - INFO - 	 In epoch number 1, finished iteration 136 | Running loss: 0.009 | Time from start of this epoch: 55.39 secs
+2024-04-02 13:04:04,941 - INFO - 	 In epoch number 1, finished iteration 137 | Running loss: 0.009 | Time from start of this epoch: 55.79 secs
+2024-04-02 13:04:05,351 - INFO - 	 In epoch number 1, finished iteration 138 | Running loss: 0.009 | Time from start of this epoch: 56.20 secs
+2024-04-02 13:04:05,745 - INFO - 	 In epoch number 1, finished iteration 139 | Running loss: 0.009 | Time from start of this epoch: 56.60 secs
+2024-04-02 13:04:06,151 - INFO - 	 In epoch number 1, finished iteration 140 | Running loss: 0.009 | Time from start of this epoch: 57.00 secs
+2024-04-02 13:04:06,557 - INFO - 	 In epoch number 1, finished iteration 141 | Running loss: 0.009 | Time from start of this epoch: 57.41 secs
+2024-04-02 13:04:06,952 - INFO - 	 In epoch number 1, finished iteration 142 | Running loss: 0.009 | Time from start of this epoch: 57.81 secs
+2024-04-02 13:04:07,354 - INFO - 	 In epoch number 1, finished iteration 143 | Running loss: 0.009 | Time from start of this epoch: 58.21 secs
+2024-04-02 13:04:07,769 - INFO - 	 In epoch number 1, finished iteration 144 | Running loss: 0.009 | Time from start of this epoch: 58.62 secs
+2024-04-02 13:04:08,165 - INFO - 	 In epoch number 1, finished iteration 145 | Running loss: 0.009 | Time from start of this epoch: 59.02 secs
+2024-04-02 13:04:08,553 - INFO - 	 In epoch number 1, finished iteration 146 | Running loss: 0.009 | Time from start of this epoch: 59.41 secs
+2024-04-02 13:04:08,965 - INFO - 	 In epoch number 1, finished iteration 147 | Running loss: 0.009 | Time from start of this epoch: 59.82 secs
+2024-04-02 13:04:09,386 - INFO - 	 In epoch number 1, finished iteration 148 | Running loss: 0.009 | Time from start of this epoch: 60.24 secs
+2024-04-02 13:04:09,789 - INFO - 	 In epoch number 1, finished iteration 149 | Running loss: 0.009 | Time from start of this epoch: 60.64 secs
+2024-04-02 13:04:10,196 - INFO - 	 In epoch number 1, finished iteration 150 | Running loss: 0.010 | Time from start of this epoch: 61.05 secs
+2024-04-02 13:04:10,602 - INFO - 	 In epoch number 1, finished iteration 151 | Running loss: 0.010 | Time from start of this epoch: 61.46 secs
+2024-04-02 13:04:11,012 - INFO - 	 In epoch number 1, finished iteration 152 | Running loss: 0.010 | Time from start of this epoch: 61.86 secs
+2024-04-02 13:04:11,418 - INFO - 	 In epoch number 1, finished iteration 153 | Running loss: 0.010 | Time from start of this epoch: 62.27 secs
+2024-04-02 13:04:11,813 - INFO - 	 In epoch number 1, finished iteration 154 | Running loss: 0.010 | Time from start of this epoch: 62.67 secs
+2024-04-02 13:04:12,217 - INFO - 	 In epoch number 1, finished iteration 155 | Running loss: 0.010 | Time from start of this epoch: 63.07 secs
+2024-04-02 13:04:12,621 - INFO - 	 In epoch number 1, finished iteration 156 | Running loss: 0.010 | Time from start of this epoch: 63.47 secs
+2024-04-02 13:04:13,015 - INFO - 	 In epoch number 1, finished iteration 157 | Running loss: 0.010 | Time from start of this epoch: 63.87 secs
+2024-04-02 13:04:13,401 - INFO - 	 In epoch number 1, finished iteration 158 | Running loss: 0.010 | Time from start of this epoch: 64.25 secs
+2024-04-02 13:04:13,809 - INFO - 	 In epoch number 1, finished iteration 159 | Running loss: 0.010 | Time from start of this epoch: 64.66 secs
+2024-04-02 13:04:14,223 - INFO - 	 In epoch number 1, finished iteration 160 | Running loss: 0.010 | Time from start of this epoch: 65.08 secs
+2024-04-02 13:04:14,625 - INFO - 	 In epoch number 1, finished iteration 161 | Running loss: 0.010 | Time from start of this epoch: 65.48 secs
+2024-04-02 13:04:15,031 - INFO - 	 In epoch number 1, finished iteration 162 | Running loss: 0.010 | Time from start of this epoch: 65.88 secs
+2024-04-02 13:04:15,451 - INFO - 	 In epoch number 1, finished iteration 163 | Running loss: 0.010 | Time from start of this epoch: 66.30 secs
+2024-04-02 13:04:15,851 - INFO - 	 In epoch number 1, finished iteration 164 | Running loss: 0.010 | Time from start of this epoch: 66.70 secs
+2024-04-02 13:04:16,256 - INFO - 	 In epoch number 1, finished iteration 165 | Running loss: 0.010 | Time from start of this epoch: 67.11 secs
+2024-04-02 13:04:16,678 - INFO - 	 In epoch number 1, finished iteration 166 | Running loss: 0.010 | Time from start of this epoch: 67.53 secs
+2024-04-02 13:04:17,079 - INFO - 	 In epoch number 1, finished iteration 167 | Running loss: 0.010 | Time from start of this epoch: 67.93 secs
+2024-04-02 13:04:17,485 - INFO - 	 In epoch number 1, finished iteration 168 | Running loss: 0.011 | Time from start of this epoch: 68.34 secs
+2024-04-02 13:04:17,874 - INFO - 	 In epoch number 1, finished iteration 169 | Running loss: 0.011 | Time from start of this epoch: 68.73 secs
+2024-04-02 13:04:18,280 - INFO - 	 In epoch number 1, finished iteration 170 | Running loss: 0.011 | Time from start of this epoch: 69.13 secs
+2024-04-02 13:04:18,690 - INFO - 	 In epoch number 1, finished iteration 171 | Running loss: 0.011 | Time from start of this epoch: 69.54 secs
+2024-04-02 13:04:19,093 - INFO - 	 In epoch number 1, finished iteration 172 | Running loss: 0.011 | Time from start of this epoch: 69.95 secs
+2024-04-02 13:04:19,477 - INFO - 	 In epoch number 1, finished iteration 173 | Running loss: 0.011 | Time from start of this epoch: 70.33 secs
+2024-04-02 13:04:19,888 - INFO - 	 In epoch number 1, finished iteration 174 | Running loss: 0.011 | Time from start of this epoch: 70.74 secs
+2024-04-02 13:04:20,280 - INFO - 	 In epoch number 1, finished iteration 175 | Running loss: 0.011 | Time from start of this epoch: 71.13 secs
+2024-04-02 13:04:20,678 - INFO - 	 In epoch number 1, finished iteration 176 | Running loss: 0.011 | Time from start of this epoch: 71.53 secs
+2024-04-02 13:04:21,076 - INFO - 	 In epoch number 1, finished iteration 177 | Running loss: 0.011 | Time from start of this epoch: 71.93 secs
+2024-04-02 13:04:21,496 - INFO - 	 In epoch number 1, finished iteration 178 | Running loss: 0.011 | Time from start of this epoch: 72.35 secs
+2024-04-02 13:04:21,890 - INFO - 	 In epoch number 1, finished iteration 179 | Running loss: 0.011 | Time from start of this epoch: 72.74 secs
+2024-04-02 13:04:22,290 - INFO - 	 In epoch number 1, finished iteration 180 | Running loss: 0.011 | Time from start of this epoch: 73.14 secs
+2024-04-02 13:04:22,682 - INFO - 	 In epoch number 1, finished iteration 181 | Running loss: 0.011 | Time from start of this epoch: 73.53 secs
+2024-04-02 13:04:23,102 - INFO - 	 In epoch number 1, finished iteration 182 | Running loss: 0.011 | Time from start of this epoch: 73.95 secs
+2024-04-02 13:04:23,508 - INFO - 	 In epoch number 1, finished iteration 183 | Running loss: 0.011 | Time from start of this epoch: 74.36 secs
+2024-04-02 13:04:23,904 - INFO - 	 In epoch number 1, finished iteration 184 | Running loss: 0.011 | Time from start of this epoch: 74.76 secs
+2024-04-02 13:04:24,318 - INFO - 	 In epoch number 1, finished iteration 185 | Running loss: 0.011 | Time from start of this epoch: 75.17 secs
+2024-04-02 13:04:24,739 - INFO - 	 In epoch number 1, finished iteration 186 | Running loss: 0.012 | Time from start of this epoch: 75.59 secs
+2024-04-02 13:04:25,141 - INFO - 	 In epoch number 1, finished iteration 187 | Running loss: 0.012 | Time from start of this epoch: 75.99 secs
+2024-04-02 13:04:25,548 - INFO - 	 In epoch number 1, finished iteration 188 | Running loss: 0.012 | Time from start of this epoch: 76.40 secs
+2024-04-02 13:04:25,957 - INFO - 	 In epoch number 1, finished iteration 189 | Running loss: 0.012 | Time from start of this epoch: 76.81 secs
+2024-04-02 13:04:26,371 - INFO - 	 In epoch number 1, finished iteration 190 | Running loss: 0.012 | Time from start of this epoch: 77.22 secs
+2024-04-02 13:04:26,762 - INFO - 	 In epoch number 1, finished iteration 191 | Running loss: 0.012 | Time from start of this epoch: 77.62 secs
+2024-04-02 13:04:27,160 - INFO - 	 In epoch number 1, finished iteration 192 | Running loss: 0.012 | Time from start of this epoch: 78.01 secs
+2024-04-02 13:04:27,569 - INFO - 	 In epoch number 1, finished iteration 193 | Running loss: 0.012 | Time from start of this epoch: 78.42 secs
+2024-04-02 13:04:27,967 - INFO - 	 In epoch number 1, finished iteration 194 | Running loss: 0.012 | Time from start of this epoch: 78.82 secs
+2024-04-02 13:04:28,376 - INFO - 	 In epoch number 1, finished iteration 195 | Running loss: 0.012 | Time from start of this epoch: 79.23 secs
+2024-04-02 13:04:28,772 - INFO - 	 In epoch number 1, finished iteration 196 | Running loss: 0.012 | Time from start of this epoch: 79.63 secs
+2024-04-02 13:04:29,184 - INFO - 	 In epoch number 1, finished iteration 197 | Running loss: 0.012 | Time from start of this epoch: 80.04 secs
+2024-04-02 13:04:29,595 - INFO - 	 In epoch number 1, finished iteration 198 | Running loss: 0.012 | Time from start of this epoch: 80.45 secs
+2024-04-02 13:04:29,986 - INFO - 	 In epoch number 1, finished iteration 199 | Running loss: 0.012 | Time from start of this epoch: 80.84 secs
+2024-04-02 13:04:30,388 - INFO - 	 In epoch number 1, finished iteration 200 | Running loss: 0.012 | Time from start of this epoch: 81.24 secs
+2024-04-02 13:04:30,812 - INFO - 	 In epoch number 1, finished iteration 201 | Running loss: 0.012 | Time from start of this epoch: 81.66 secs
+2024-04-02 13:04:31,231 - INFO - 	 In epoch number 1, finished iteration 202 | Running loss: 0.012 | Time from start of this epoch: 82.08 secs
+2024-04-02 13:04:31,625 - INFO - 	 In epoch number 1, finished iteration 203 | Running loss: 0.012 | Time from start of this epoch: 82.48 secs
+2024-04-02 13:04:32,042 - INFO - 	 In epoch number 1, finished iteration 204 | Running loss: 0.012 | Time from start of this epoch: 82.90 secs
+2024-04-02 13:04:32,456 - INFO - 	 In epoch number 1, finished iteration 205 | Running loss: 0.013 | Time from start of this epoch: 83.31 secs
+2024-04-02 13:04:32,855 - INFO - 	 In epoch number 1, finished iteration 206 | Running loss: 0.013 | Time from start of this epoch: 83.71 secs
+2024-04-02 13:04:33,255 - INFO - 	 In epoch number 1, finished iteration 207 | Running loss: 0.013 | Time from start of this epoch: 84.11 secs
+2024-04-02 13:04:33,676 - INFO - 	 In epoch number 1, finished iteration 208 | Running loss: 0.013 | Time from start of this epoch: 84.53 secs
+2024-04-02 13:04:34,081 - INFO - 	 In epoch number 1, finished iteration 209 | Running loss: 0.013 | Time from start of this epoch: 84.93 secs
+2024-04-02 13:04:34,477 - INFO - 	 In epoch number 1, finished iteration 210 | Running loss: 0.013 | Time from start of this epoch: 85.33 secs
+2024-04-02 13:04:34,875 - INFO - 	 In epoch number 1, finished iteration 211 | Running loss: 0.013 | Time from start of this epoch: 85.73 secs
+2024-04-02 13:04:35,287 - INFO - 	 In epoch number 1, finished iteration 212 | Running loss: 0.013 | Time from start of this epoch: 86.14 secs
+2024-04-02 13:04:35,693 - INFO - 	 In epoch number 1, finished iteration 213 | Running loss: 0.013 | Time from start of this epoch: 86.55 secs
+2024-04-02 13:04:36,084 - INFO - 	 In epoch number 1, finished iteration 214 | Running loss: 0.013 | Time from start of this epoch: 86.94 secs
+2024-04-02 13:04:36,484 - INFO - 	 In epoch number 1, finished iteration 215 | Running loss: 0.013 | Time from start of this epoch: 87.34 secs
+2024-04-02 13:04:36,906 - INFO - 	 In epoch number 1, finished iteration 216 | Running loss: 0.013 | Time from start of this epoch: 87.76 secs
+2024-04-02 13:04:37,312 - INFO - 	 In epoch number 1, finished iteration 217 | Running loss: 0.013 | Time from start of this epoch: 88.17 secs
+2024-04-02 13:04:37,711 - INFO - 	 In epoch number 1, finished iteration 218 | Running loss: 0.013 | Time from start of this epoch: 88.56 secs
+2024-04-02 13:04:38,115 - INFO - 	 In epoch number 1, finished iteration 219 | Running loss: 0.013 | Time from start of this epoch: 88.97 secs
+2024-04-02 13:04:38,528 - INFO - 	 In epoch number 1, finished iteration 220 | Running loss: 0.013 | Time from start of this epoch: 89.38 secs
+2024-04-02 13:04:38,939 - INFO - 	 In epoch number 1, finished iteration 221 | Running loss: 0.013 | Time from start of this epoch: 89.79 secs
+2024-04-02 13:04:39,329 - INFO - 	 In epoch number 1, finished iteration 222 | Running loss: 0.013 | Time from start of this epoch: 90.18 secs
+2024-04-02 13:04:39,741 - INFO - 	 In epoch number 1, finished iteration 223 | Running loss: 0.013 | Time from start of this epoch: 90.59 secs
+2024-04-02 13:04:39,864 - INFO - 	 In epoch number 1, finished iteration 224 | Running loss: 0.014 | Time from start of this epoch: 90.72 secs
+2024-04-02 13:04:47,612 - INFO - Epoch: 1 | Loss: 0.0135 | Validation accuracy: 47.256% | Epoch Time: 98.46 secs
+2024-04-02 13:04:49,054 - INFO - 	 In epoch number 2, finished iteration 0 | Running loss: 0.000 | Time from start of this epoch: 0.47 secs
+2024-04-02 13:04:49,453 - INFO - 	 In epoch number 2, finished iteration 1 | Running loss: 0.000 | Time from start of this epoch: 0.86 secs
+2024-04-02 13:04:49,870 - INFO - 	 In epoch number 2, finished iteration 2 | Running loss: 0.000 | Time from start of this epoch: 1.28 secs
+2024-04-02 13:04:50,292 - INFO - 	 In epoch number 2, finished iteration 3 | Running loss: 0.000 | Time from start of this epoch: 1.70 secs
+2024-04-02 13:04:50,684 - INFO - 	 In epoch number 2, finished iteration 4 | Running loss: 0.000 | Time from start of this epoch: 2.10 secs
+2024-04-02 13:04:51,082 - INFO - 	 In epoch number 2, finished iteration 5 | Running loss: 0.000 | Time from start of this epoch: 2.49 secs
+2024-04-02 13:04:51,514 - INFO - 	 In epoch number 2, finished iteration 6 | Running loss: 0.000 | Time from start of this epoch: 2.93 secs
+2024-04-02 13:04:51,927 - INFO - 	 In epoch number 2, finished iteration 7 | Running loss: 0.000 | Time from start of this epoch: 3.34 secs
+2024-04-02 13:04:52,335 - INFO - 	 In epoch number 2, finished iteration 8 | Running loss: 0.000 | Time from start of this epoch: 3.75 secs
+2024-04-02 13:04:52,741 - INFO - 	 In epoch number 2, finished iteration 9 | Running loss: 0.001 | Time from start of this epoch: 4.15 secs
+2024-04-02 13:04:53,157 - INFO - 	 In epoch number 2, finished iteration 10 | Running loss: 0.001 | Time from start of this epoch: 4.57 secs
+2024-04-02 13:04:53,570 - INFO - 	 In epoch number 2, finished iteration 11 | Running loss: 0.001 | Time from start of this epoch: 4.98 secs
+2024-04-02 13:04:53,977 - INFO - 	 In epoch number 2, finished iteration 12 | Running loss: 0.001 | Time from start of this epoch: 5.39 secs
+2024-04-02 13:04:54,370 - INFO - 	 In epoch number 2, finished iteration 13 | Running loss: 0.001 | Time from start of this epoch: 5.78 secs
+2024-04-02 13:04:54,785 - INFO - 	 In epoch number 2, finished iteration 14 | Running loss: 0.001 | Time from start of this epoch: 6.20 secs
+2024-04-02 13:04:55,196 - INFO - 	 In epoch number 2, finished iteration 15 | Running loss: 0.001 | Time from start of this epoch: 6.61 secs
+2024-04-02 13:04:55,603 - INFO - 	 In epoch number 2, finished iteration 16 | Running loss: 0.001 | Time from start of this epoch: 7.01 secs
+2024-04-02 13:04:56,027 - INFO - 	 In epoch number 2, finished iteration 17 | Running loss: 0.001 | Time from start of this epoch: 7.44 secs
+2024-04-02 13:04:56,430 - INFO - 	 In epoch number 2, finished iteration 18 | Running loss: 0.001 | Time from start of this epoch: 7.84 secs
+2024-04-02 13:04:56,829 - INFO - 	 In epoch number 2, finished iteration 19 | Running loss: 0.001 | Time from start of this epoch: 8.24 secs
+2024-04-02 13:04:57,223 - INFO - 	 In epoch number 2, finished iteration 20 | Running loss: 0.001 | Time from start of this epoch: 8.63 secs
+2024-04-02 13:04:57,636 - INFO - 	 In epoch number 2, finished iteration 21 | Running loss: 0.001 | Time from start of this epoch: 9.05 secs
+2024-04-02 13:04:58,042 - INFO - 	 In epoch number 2, finished iteration 22 | Running loss: 0.001 | Time from start of this epoch: 9.45 secs
+2024-04-02 13:04:58,452 - INFO - 	 In epoch number 2, finished iteration 23 | Running loss: 0.001 | Time from start of this epoch: 9.86 secs
+2024-04-02 13:04:58,849 - INFO - 	 In epoch number 2, finished iteration 24 | Running loss: 0.001 | Time from start of this epoch: 10.26 secs
+2024-04-02 13:04:59,273 - INFO - 	 In epoch number 2, finished iteration 25 | Running loss: 0.001 | Time from start of this epoch: 10.68 secs
+2024-04-02 13:04:59,692 - INFO - 	 In epoch number 2, finished iteration 26 | Running loss: 0.001 | Time from start of this epoch: 11.10 secs
+2024-04-02 13:05:00,096 - INFO - 	 In epoch number 2, finished iteration 27 | Running loss: 0.002 | Time from start of this epoch: 11.51 secs
+2024-04-02 13:05:00,512 - INFO - 	 In epoch number 2, finished iteration 28 | Running loss: 0.002 | Time from start of this epoch: 11.92 secs
+2024-04-02 13:05:00,929 - INFO - 	 In epoch number 2, finished iteration 29 | Running loss: 0.002 | Time from start of this epoch: 12.34 secs
+2024-04-02 13:05:01,353 - INFO - 	 In epoch number 2, finished iteration 30 | Running loss: 0.002 | Time from start of this epoch: 12.76 secs
+2024-04-02 13:05:01,736 - INFO - 	 In epoch number 2, finished iteration 31 | Running loss: 0.002 | Time from start of this epoch: 13.15 secs
+2024-04-02 13:05:02,149 - INFO - 	 In epoch number 2, finished iteration 32 | Running loss: 0.002 | Time from start of this epoch: 13.56 secs
+2024-04-02 13:05:02,549 - INFO - 	 In epoch number 2, finished iteration 33 | Running loss: 0.002 | Time from start of this epoch: 13.96 secs
+2024-04-02 13:05:02,946 - INFO - 	 In epoch number 2, finished iteration 34 | Running loss: 0.002 | Time from start of this epoch: 14.36 secs
+2024-04-02 13:05:03,351 - INFO - 	 In epoch number 2, finished iteration 35 | Running loss: 0.002 | Time from start of this epoch: 14.76 secs
+2024-04-02 13:05:03,758 - INFO - 	 In epoch number 2, finished iteration 36 | Running loss: 0.002 | Time from start of this epoch: 15.17 secs
+2024-04-02 13:05:04,167 - INFO - 	 In epoch number 2, finished iteration 37 | Running loss: 0.002 | Time from start of this epoch: 15.58 secs
+2024-04-02 13:05:04,566 - INFO - 	 In epoch number 2, finished iteration 38 | Running loss: 0.002 | Time from start of this epoch: 15.98 secs
+2024-04-02 13:05:04,971 - INFO - 	 In epoch number 2, finished iteration 39 | Running loss: 0.002 | Time from start of this epoch: 16.38 secs
+2024-04-02 13:05:05,379 - INFO - 	 In epoch number 2, finished iteration 40 | Running loss: 0.002 | Time from start of this epoch: 16.79 secs
+2024-04-02 13:05:05,783 - INFO - 	 In epoch number 2, finished iteration 41 | Running loss: 0.002 | Time from start of this epoch: 17.19 secs
+2024-04-02 13:05:06,184 - INFO - 	 In epoch number 2, finished iteration 42 | Running loss: 0.002 | Time from start of this epoch: 17.60 secs
+2024-04-02 13:05:06,597 - INFO - 	 In epoch number 2, finished iteration 43 | Running loss: 0.002 | Time from start of this epoch: 18.01 secs
+2024-04-02 13:05:07,000 - INFO - 	 In epoch number 2, finished iteration 44 | Running loss: 0.002 | Time from start of this epoch: 18.41 secs

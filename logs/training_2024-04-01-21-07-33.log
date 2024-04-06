@@ -1,0 +1,319 @@
+2024-04-01 21:07:33,841 - INFO - 
+#########
+BYOL Training!!!
+#########
+2024-04-01 21:07:33,842 - INFO - Args parsed succesfully
+2024-04-01 21:07:33,842 - INFO - Params: Namespace(epochs=100, exp_name='BYOL_MORE_EPOCHS', fine_tune=True, net_name='resnet18')
+2024-04-01 21:07:34,178 - INFO - Model for BYOL was initialized and sent to cuda:0
+2024-04-01 21:07:34,180 - INFO - BYOL(
+  (backbone): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+    (4): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (5): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (6): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (7): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (8): AdaptiveAvgPool2d(output_size=(1, 1))
+  )
+  (projection_head): BYOLProjectionHead(
+    (layers): Sequential(
+      (0): Linear(in_features=512, out_features=1024, bias=False)
+      (1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=1024, out_features=256, bias=True)
+    )
+  )
+  (prediction_head): BYOLPredictionHead(
+    (layers): Sequential(
+      (0): Linear(in_features=256, out_features=1024, bias=False)
+      (1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=1024, out_features=256, bias=True)
+    )
+  )
+  (backbone_momentum): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+    (4): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (5): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (6): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (7): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (8): AdaptiveAvgPool2d(output_size=(1, 1))
+  )
+  (projection_head_momentum): BYOLProjectionHead(
+    (layers): Sequential(
+      (0): Linear(in_features=512, out_features=1024, bias=False)
+      (1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Linear(in_features=1024, out_features=256, bias=True)
+    )
+  )
+)
+2024-04-01 21:07:35,043 - INFO - All data has been loaded
+2024-04-01 21:07:35,044 - INFO - Got hyper parametrs for current model:
+2024-04-01 21:07:35,044 - INFO - batch size=32
+2024-04-01 21:07:35,044 - INFO - Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    initial_lr: 0.0002
+    lr: 0.0002
+    maximize: False
+    weight_decay: 2e-05
+)
+2024-04-01 21:07:35,045 - INFO - DataLoader initialized
+2024-04-01 21:07:35,045 - INFO - HyperParams initiliazed, starting training...
+2024-04-01 21:09:26,739 - INFO - Epoch: 0 | Loss: -793.4992 | Epoch Time: 111.69 secs
+2024-04-01 21:11:18,228 - INFO - Epoch: 1 | Loss: -860.0214 | Epoch Time: 111.48 secs
+2024-04-01 21:13:07,673 - INFO - Epoch: 2 | Loss: -862.5394 | Epoch Time: 109.44 secs
+2024-04-01 21:14:57,691 - INFO - Epoch: 3 | Loss: -864.2554 | Epoch Time: 110.01 secs
+2024-04-01 21:16:47,885 - INFO - Epoch: 4 | Loss: -866.2256 | Epoch Time: 110.19 secs
+2024-04-01 21:18:37,785 - INFO - Epoch: 5 | Loss: -867.9332 | Epoch Time: 109.89 secs
+2024-04-01 21:20:27,651 - INFO - Epoch: 6 | Loss: -869.7054 | Epoch Time: 109.86 secs
+2024-04-01 21:22:19,627 - INFO - Epoch: 7 | Loss: -871.8192 | Epoch Time: 111.97 secs
+2024-04-01 21:24:10,693 - INFO - Epoch: 8 | Loss: -873.8162 | Epoch Time: 111.06 secs
+2024-04-01 21:26:00,609 - INFO - Epoch: 9 | Loss: -876.2099 | Epoch Time: 109.91 secs
+2024-04-01 21:27:50,134 - INFO - Epoch: 10 | Loss: -878.3210 | Epoch Time: 109.52 secs
+2024-04-01 21:29:39,458 - INFO - Epoch: 11 | Loss: -879.9701 | Epoch Time: 109.32 secs
+2024-04-01 21:31:29,756 - INFO - Epoch: 12 | Loss: -881.3663 | Epoch Time: 110.29 secs
+2024-04-01 21:33:20,395 - INFO - Epoch: 13 | Loss: -882.5897 | Epoch Time: 110.63 secs
+2024-04-01 21:35:10,862 - INFO - Epoch: 14 | Loss: -883.2607 | Epoch Time: 110.46 secs
+2024-04-01 21:37:01,127 - INFO - Epoch: 15 | Loss: -883.8527 | Epoch Time: 110.26 secs
+2024-04-01 21:38:50,829 - INFO - Epoch: 16 | Loss: -884.1541 | Epoch Time: 109.69 secs
+2024-04-01 21:41:09,208 - INFO - Epoch: 17 | Loss: -884.7064 | Epoch Time: 138.34 secs
+2024-04-01 21:43:02,575 - INFO - Epoch: 18 | Loss: -884.8868 | Epoch Time: 113.36 secs
+2024-04-01 21:44:54,017 - INFO - Epoch: 19 | Loss: -885.1354 | Epoch Time: 111.43 secs
+2024-04-01 21:46:44,647 - INFO - Epoch: 20 | Loss: -885.2969 | Epoch Time: 110.62 secs
+2024-04-01 21:48:35,535 - INFO - Epoch: 21 | Loss: -885.5334 | Epoch Time: 110.88 secs
+2024-04-01 21:50:26,515 - INFO - Epoch: 22 | Loss: -885.4515 | Epoch Time: 110.97 secs
+2024-04-01 21:52:16,436 - INFO - Epoch: 23 | Loss: -885.7540 | Epoch Time: 109.91 secs
+2024-04-01 21:54:07,036 - INFO - Epoch: 24 | Loss: -885.7007 | Epoch Time: 110.59 secs
+2024-04-01 21:55:57,014 - INFO - Epoch: 25 | Loss: -885.8939 | Epoch Time: 109.97 secs
+2024-04-01 21:57:47,595 - INFO - Epoch: 26 | Loss: -885.9150 | Epoch Time: 110.57 secs
+2024-04-01 21:59:38,971 - INFO - Epoch: 27 | Loss: -885.9468 | Epoch Time: 111.37 secs
+2024-04-01 22:01:29,946 - INFO - Epoch: 28 | Loss: -886.1326 | Epoch Time: 110.97 secs
+2024-04-01 22:03:20,683 - INFO - Epoch: 29 | Loss: -886.1289 | Epoch Time: 110.73 secs
+2024-04-01 22:05:12,255 - INFO - Epoch: 30 | Loss: -886.0624 | Epoch Time: 111.56 secs
+2024-04-01 22:07:03,517 - INFO - Epoch: 31 | Loss: -886.1390 | Epoch Time: 111.25 secs
+2024-04-01 22:08:54,465 - INFO - Epoch: 32 | Loss: -886.1750 | Epoch Time: 110.94 secs
+2024-04-01 22:10:44,995 - INFO - Epoch: 33 | Loss: -886.1829 | Epoch Time: 110.52 secs
+2024-04-01 22:12:35,873 - INFO - Epoch: 34 | Loss: -886.0658 | Epoch Time: 110.87 secs
+2024-04-01 22:14:27,642 - INFO - Epoch: 35 | Loss: -886.1061 | Epoch Time: 111.76 secs
+2024-04-01 22:16:17,686 - INFO - Epoch: 36 | Loss: -886.0657 | Epoch Time: 110.04 secs
+2024-04-01 22:18:08,287 - INFO - Epoch: 37 | Loss: -886.2318 | Epoch Time: 110.59 secs
+2024-04-01 22:19:58,341 - INFO - Epoch: 38 | Loss: -886.0997 | Epoch Time: 110.05 secs
+2024-04-01 22:21:49,168 - INFO - Epoch: 39 | Loss: -886.1826 | Epoch Time: 110.82 secs
+2024-04-01 22:23:38,606 - INFO - Epoch: 40 | Loss: -886.2531 | Epoch Time: 109.43 secs
+2024-04-01 22:25:28,881 - INFO - Epoch: 41 | Loss: -886.1126 | Epoch Time: 110.27 secs
+2024-04-01 22:27:19,542 - INFO - Epoch: 42 | Loss: -885.9725 | Epoch Time: 110.65 secs
+2024-04-01 22:29:10,820 - INFO - Epoch: 43 | Loss: -886.0010 | Epoch Time: 111.27 secs
+2024-04-01 22:31:02,240 - INFO - Epoch: 44 | Loss: -886.3655 | Epoch Time: 111.41 secs
+2024-04-01 22:32:52,099 - INFO - Epoch: 45 | Loss: -886.0143 | Epoch Time: 109.85 secs
+2024-04-01 22:34:42,561 - INFO - Epoch: 46 | Loss: -886.0378 | Epoch Time: 110.45 secs
+2024-04-01 22:36:33,535 - INFO - Epoch: 47 | Loss: -885.5305 | Epoch Time: 110.97 secs
+2024-04-01 22:38:24,623 - INFO - Epoch: 48 | Loss: -886.1439 | Epoch Time: 111.08 secs
+2024-04-01 22:40:14,817 - INFO - Epoch: 49 | Loss: -886.0411 | Epoch Time: 110.19 secs
+2024-04-01 22:42:05,432 - INFO - Epoch: 50 | Loss: -885.7971 | Epoch Time: 110.61 secs
+2024-04-01 22:43:55,451 - INFO - Epoch: 51 | Loss: -885.9030 | Epoch Time: 110.01 secs
+2024-04-01 22:45:46,246 - INFO - Epoch: 52 | Loss: -885.8393 | Epoch Time: 110.79 secs
+2024-04-01 22:47:37,037 - INFO - Epoch: 53 | Loss: -885.0294 | Epoch Time: 110.78 secs
+2024-04-01 22:49:27,676 - INFO - Epoch: 54 | Loss: -885.6653 | Epoch Time: 110.63 secs
+2024-04-01 22:51:19,064 - INFO - Epoch: 55 | Loss: -885.6044 | Epoch Time: 111.38 secs
+2024-04-01 22:53:09,761 - INFO - Epoch: 56 | Loss: -886.0636 | Epoch Time: 110.69 secs
+2024-04-01 22:54:59,730 - INFO - Epoch: 57 | Loss: -885.3763 | Epoch Time: 109.96 secs
+2024-04-01 22:56:50,687 - INFO - Epoch: 58 | Loss: -885.0338 | Epoch Time: 110.95 secs
+2024-04-01 22:58:41,461 - INFO - Epoch: 59 | Loss: -885.9379 | Epoch Time: 110.77 secs
+2024-04-01 23:00:32,090 - INFO - Epoch: 60 | Loss: -884.5150 | Epoch Time: 110.62 secs
+2024-04-01 23:02:22,037 - INFO - Epoch: 61 | Loss: -885.0693 | Epoch Time: 109.94 secs
+2024-04-01 23:04:13,279 - INFO - Epoch: 62 | Loss: -885.9658 | Epoch Time: 111.23 secs
+2024-04-01 23:06:03,782 - INFO - Epoch: 63 | Loss: -884.9673 | Epoch Time: 110.49 secs
+2024-04-01 23:07:53,512 - INFO - Epoch: 64 | Loss: -884.4359 | Epoch Time: 109.72 secs
+2024-04-01 23:09:44,832 - INFO - Epoch: 65 | Loss: -885.7747 | Epoch Time: 111.31 secs
+2024-04-01 23:11:34,519 - INFO - Epoch: 66 | Loss: -884.3757 | Epoch Time: 109.68 secs
+2024-04-01 23:13:24,610 - INFO - Epoch: 67 | Loss: -884.8036 | Epoch Time: 110.08 secs
+2024-04-01 23:15:14,048 - INFO - Epoch: 68 | Loss: -885.0359 | Epoch Time: 109.43 secs
+2024-04-01 23:17:03,815 - INFO - Epoch: 69 | Loss: -885.0805 | Epoch Time: 109.76 secs
+2024-04-01 23:18:54,475 - INFO - Epoch: 70 | Loss: -884.0695 | Epoch Time: 110.65 secs
+2024-04-01 23:20:43,826 - INFO - Epoch: 71 | Loss: -884.4185 | Epoch Time: 109.34 secs
+2024-04-01 23:22:33,552 - INFO - Epoch: 72 | Loss: -884.5084 | Epoch Time: 109.72 secs
+2024-04-01 23:24:24,488 - INFO - Epoch: 73 | Loss: -884.6450 | Epoch Time: 110.93 secs
+2024-04-01 23:26:15,512 - INFO - Epoch: 74 | Loss: -882.6125 | Epoch Time: 111.02 secs
+2024-04-01 23:28:05,760 - INFO - Epoch: 75 | Loss: -885.5721 | Epoch Time: 110.24 secs
+2024-04-01 23:29:56,206 - INFO - Epoch: 76 | Loss: -883.8477 | Epoch Time: 110.44 secs
+2024-04-01 23:31:47,108 - INFO - Epoch: 77 | Loss: -884.1899 | Epoch Time: 110.89 secs
+2024-04-01 23:33:36,982 - INFO - Epoch: 78 | Loss: -884.2147 | Epoch Time: 109.87 secs
+2024-04-01 23:35:26,723 - INFO - Epoch: 79 | Loss: -882.1705 | Epoch Time: 109.73 secs
+2024-04-01 23:37:17,288 - INFO - Epoch: 80 | Loss: -885.2614 | Epoch Time: 110.56 secs
+2024-04-01 23:39:06,927 - INFO - Epoch: 81 | Loss: -881.8387 | Epoch Time: 109.63 secs
+2024-04-01 23:40:56,187 - INFO - Epoch: 82 | Loss: -884.6206 | Epoch Time: 109.25 secs
+2024-04-01 23:42:45,544 - INFO - Epoch: 83 | Loss: -883.7917 | Epoch Time: 109.35 secs
+2024-04-01 23:44:35,701 - INFO - Epoch: 84 | Loss: -882.1287 | Epoch Time: 110.15 secs
+2024-04-01 23:46:25,691 - INFO - Epoch: 85 | Loss: -883.7837 | Epoch Time: 109.98 secs
+2024-04-01 23:48:17,320 - INFO - Epoch: 86 | Loss: -884.2596 | Epoch Time: 111.62 secs
+2024-04-01 23:50:07,745 - INFO - Epoch: 87 | Loss: -881.2148 | Epoch Time: 110.42 secs
+2024-04-01 23:51:57,247 - INFO - Epoch: 88 | Loss: -884.6475 | Epoch Time: 109.49 secs
+2024-04-01 23:53:47,678 - INFO - Epoch: 89 | Loss: -882.7967 | Epoch Time: 110.42 secs
+2024-04-01 23:55:37,274 - INFO - Epoch: 90 | Loss: -883.1697 | Epoch Time: 109.59 secs
+2024-04-01 23:57:29,183 - INFO - Epoch: 91 | Loss: -881.7807 | Epoch Time: 111.90 secs
+2024-04-01 23:59:19,412 - INFO - Epoch: 92 | Loss: -883.4666 | Epoch Time: 110.22 secs
+2024-04-02 00:01:10,026 - INFO - Epoch: 93 | Loss: -882.1438 | Epoch Time: 110.61 secs
+2024-04-02 00:03:00,006 - INFO - Epoch: 94 | Loss: -883.6659 | Epoch Time: 109.97 secs
+2024-04-02 00:04:50,056 - INFO - Epoch: 95 | Loss: -883.5686 | Epoch Time: 110.04 secs
+2024-04-02 00:06:39,818 - INFO - Epoch: 96 | Loss: -881.5978 | Epoch Time: 109.75 secs
+2024-04-02 00:08:30,448 - INFO - Epoch: 97 | Loss: -883.9989 | Epoch Time: 110.62 secs
+2024-04-02 00:10:21,647 - INFO - Epoch: 98 | Loss: -880.1360 | Epoch Time: 111.19 secs
+2024-04-02 00:12:12,760 - INFO - Epoch: 99 | Loss: -882.2667 | Epoch Time: 111.11 secs
+2024-04-02 00:12:12,986 - INFO - Train BYOL Ended!

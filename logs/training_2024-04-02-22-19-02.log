@@ -1,0 +1,99 @@
+2024-04-02 22:19:02,753 - INFO - Args parsed succesfully
+2024-04-02 22:19:02,753 - INFO - Params: Namespace(emotion_transform_prob=0.0, epochs=40, exp_name='Regular_Larger_Version', fine_tune=False, load_byol=False, net_name='dino_v2', use_expanded_dataset=False, verbose=False)
+2024-04-02 22:19:03,358 - INFO - using MLP layer as FFN
+2024-04-02 22:19:08,376 - INFO - Model was initialized and sent to cuda:0
+2024-04-02 22:19:08,377 - INFO - EmotionNet(
+  (nn_model): DinoVisionTransformer(
+    (patch_embed): PatchEmbed(
+      (proj): Conv2d(3, 1024, kernel_size=(14, 14), stride=(14, 14))
+      (norm): Identity()
+    )
+    (blocks): ModuleList(
+      (0-23): 24 x NestedTensorBlock(
+        (norm1): LayerNorm((1024,), eps=1e-06, elementwise_affine=True)
+        (attn): MemEffAttention(
+          (qkv): Linear(in_features=1024, out_features=3072, bias=True)
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls1): LayerScale()
+        (drop_path1): Identity()
+        (norm2): LayerNorm((1024,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+          (drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls2): LayerScale()
+        (drop_path2): Identity()
+      )
+    )
+    (norm): LayerNorm((1024,), eps=1e-06, elementwise_affine=True)
+    (head): Linear(in_features=1024, out_features=7, bias=True)
+  )
+)
+2024-04-02 22:19:10,009 - INFO - All data has been loaded
+2024-04-02 22:19:10,011 - INFO - Got hyper parametrs for current model:
+2024-04-02 22:19:10,011 - INFO - batch size=128
+2024-04-02 22:19:10,011 - INFO - Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    initial_lr: 0.0002
+    lr: 0.0002
+    maximize: False
+    weight_decay: 2e-05
+)
+2024-04-02 22:19:10,011 - INFO - <torch.optim.lr_scheduler.CosineAnnealingLR object at 0x7f0440314160>
+2024-04-02 22:19:10,011 - INFO - DataLoaders initialized
+2024-04-02 22:19:10,011 - INFO - HyperParams initiliazed, starting training...
+2024-04-02 22:28:29,258 - INFO - Epoch: 1 | Loss: 0.0110 | Validation accuracy: 56.450% | Epoch Time: 559.25 secs
+2024-04-02 22:37:58,098 - INFO - Epoch: 2 | Loss: 0.0099 | Validation accuracy: 59.404% | Epoch Time: 566.50 secs
+2024-04-02 22:47:46,954 - INFO - Epoch: 3 | Loss: 0.0096 | Validation accuracy: 60.853% | Epoch Time: 570.02 secs
+2024-04-02 22:57:36,396 - INFO - Epoch: 4 | Loss: 0.0093 | Validation accuracy: 61.410% | Epoch Time: 569.95 secs
+2024-04-02 23:15:51,084 - INFO - Epoch: 5 | Loss: 0.0093 | Training accuracy: 55.683% | Validation accuracy: 62.023% | Epoch Time: 1076.23 secs
+2024-04-02 23:25:38,897 - INFO - Epoch: 6 | Loss: 0.0092 | Validation accuracy: 62.441% | Epoch Time: 569.29 secs
+2024-04-02 23:35:25,344 - INFO - Epoch: 7 | Loss: 0.0091 | Validation accuracy: 62.552% | Epoch Time: 569.50 secs
+2024-04-02 23:45:11,808 - INFO - Epoch: 8 | Loss: 0.0090 | Validation accuracy: 62.664% | Epoch Time: 569.40 secs
+2024-04-02 23:55:00,413 - INFO - Epoch: 9 | Loss: 0.0090 | Validation accuracy: 63.555% | Epoch Time: 569.25 secs
+2024-04-03 00:13:13,631 - INFO - Epoch: 10 | Loss: 0.0089 | Training accuracy: 57.205% | Validation accuracy: 62.887% | Epoch Time: 1075.62 secs
+2024-04-03 00:22:47,975 - INFO - Epoch: 11 | Loss: 0.0089 | Validation accuracy: 63.416% | Epoch Time: 567.52 secs
+2024-04-03 00:32:23,096 - INFO - Epoch: 12 | Loss: 0.0088 | Validation accuracy: 62.747% | Epoch Time: 567.66 secs
+2024-04-03 00:41:57,586 - INFO - Epoch: 13 | Loss: 0.0089 | Validation accuracy: 63.695% | Epoch Time: 567.46 secs
+2024-04-03 00:51:52,079 - INFO - Epoch: 14 | Loss: 0.0088 | Validation accuracy: 63.500% | Epoch Time: 569.12 secs
+2024-04-03 01:09:54,557 - INFO - Epoch: 15 | Loss: 0.0088 | Training accuracy: 58.038% | Validation accuracy: 63.667% | Epoch Time: 1074.33 secs
+2024-04-03 01:19:29,678 - INFO - Epoch: 16 | Loss: 0.0088 | Validation accuracy: 63.806% | Epoch Time: 567.09 secs
+2024-04-03 01:29:16,565 - INFO - Epoch: 17 | Loss: 0.0088 | Validation accuracy: 63.778% | Epoch Time: 569.86 secs
+2024-04-03 01:38:51,954 - INFO - Epoch: 18 | Loss: 0.0088 | Validation accuracy: 64.558% | Epoch Time: 568.00 secs
+2024-04-03 01:48:34,639 - INFO - Epoch: 19 | Loss: 0.0087 | Validation accuracy: 63.973% | Epoch Time: 569.15 secs
+2024-04-03 02:06:34,967 - INFO - Epoch: 20 | Loss: 0.0087 | Training accuracy: 57.982% | Validation accuracy: 64.168% | Epoch Time: 1073.33 secs
+2024-04-03 02:16:09,115 - INFO - Epoch: 21 | Loss: 0.0087 | Validation accuracy: 64.224% | Epoch Time: 566.94 secs
+2024-04-03 02:25:42,304 - INFO - Epoch: 22 | Loss: 0.0087 | Validation accuracy: 63.667% | Epoch Time: 566.64 secs
+2024-04-03 02:35:14,591 - INFO - Epoch: 23 | Loss: 0.0087 | Validation accuracy: 63.918% | Epoch Time: 566.41 secs
+2024-04-03 02:44:47,854 - INFO - Epoch: 24 | Loss: 0.0087 | Validation accuracy: 63.555% | Epoch Time: 566.79 secs
+2024-04-03 03:02:46,212 - INFO - Epoch: 25 | Loss: 0.0087 | Training accuracy: 58.076% | Validation accuracy: 63.583% | Epoch Time: 1072.33 secs
+2024-04-03 03:12:19,811 - INFO - Epoch: 26 | Loss: 0.0087 | Validation accuracy: 64.447% | Epoch Time: 566.57 secs
+2024-04-03 03:21:52,469 - INFO - Epoch: 27 | Loss: 0.0087 | Validation accuracy: 64.029% | Epoch Time: 566.64 secs
+2024-04-03 03:31:24,494 - INFO - Epoch: 28 | Loss: 0.0086 | Validation accuracy: 63.945% | Epoch Time: 566.25 secs
+2024-04-03 03:40:56,173 - INFO - Epoch: 29 | Loss: 0.0087 | Validation accuracy: 64.391% | Epoch Time: 566.47 secs
+2024-04-03 03:58:54,667 - INFO - Epoch: 30 | Loss: 0.0086 | Training accuracy: 58.539% | Validation accuracy: 64.447% | Epoch Time: 1072.79 secs
+2024-04-03 04:08:27,534 - INFO - Epoch: 31 | Loss: 0.0087 | Validation accuracy: 64.391% | Epoch Time: 566.71 secs
+2024-04-03 04:18:00,318 - INFO - Epoch: 32 | Loss: 0.0086 | Validation accuracy: 64.475% | Epoch Time: 566.62 secs
+2024-04-03 04:27:32,148 - INFO - Epoch: 33 | Loss: 0.0086 | Validation accuracy: 64.447% | Epoch Time: 566.61 secs
+2024-04-03 04:37:05,048 - INFO - Epoch: 34 | Loss: 0.0086 | Validation accuracy: 64.085% | Epoch Time: 566.77 secs
+2024-04-03 04:55:04,020 - INFO - Epoch: 35 | Loss: 0.0086 | Training accuracy: 58.494% | Validation accuracy: 64.140% | Epoch Time: 1072.38 secs
+2024-04-03 05:04:37,008 - INFO - Epoch: 36 | Loss: 0.0086 | Validation accuracy: 64.224% | Epoch Time: 566.42 secs
+2024-04-03 05:14:09,849 - INFO - Epoch: 37 | Loss: 0.0086 | Validation accuracy: 64.029% | Epoch Time: 566.48 secs
+2024-04-03 05:23:40,263 - INFO - Epoch: 38 | Loss: 0.0087 | Validation accuracy: 64.057% | Epoch Time: 566.09 secs
+2024-04-03 05:33:13,292 - INFO - Epoch: 39 | Loss: 0.0086 | Validation accuracy: 64.113% | Epoch Time: 566.52 secs
+2024-04-03 05:51:11,591 - INFO - Epoch: 40 | Loss: 0.0087 | Training accuracy: 58.633% | Validation accuracy: 64.113% | Epoch Time: 1071.87 secs
+2024-04-03 05:51:17,622 - INFO - Train Ended!
+2024-04-03 05:51:17,622 - INFO - Saving train statistics
+2024-04-03 05:51:17,813 - INFO - Save statistics done!

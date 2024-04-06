@@ -1,0 +1,132 @@
+2024-04-03 15:35:34,707 - INFO - Args parsed succesfully
+2024-04-03 15:35:34,707 - INFO - Params: Namespace(emotion_transform_prob=0.8, epochs=20, exp_name='Augmented_Few_Epochs', fine_tune=True, load_byol=False, net_name='resnet18', use_expanded_dataset=False, verbose=False)
+2024-04-03 15:35:35,035 - INFO - Model was initialized and sent to cuda:0
+2024-04-03 15:35:35,036 - INFO - EmotionNet(
+  (nn_model): ResNet(
+    (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+    (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU(inplace=True)
+    (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+    (layer1): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (layer2): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (layer3): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (layer4): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+    (fc): Linear(in_features=512, out_features=7, bias=True)
+  )
+)
+2024-04-03 15:35:36,706 - INFO - All data has been loaded
+2024-04-03 15:35:36,707 - INFO - Got hyper parametrs for current model:
+2024-04-03 15:35:36,707 - INFO - batch size=128
+2024-04-03 15:35:36,707 - INFO - Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    initial_lr: 0.0002
+    lr: 0.0002
+    maximize: False
+    weight_decay: 2e-05
+)
+2024-04-03 15:35:36,707 - INFO - <torch.optim.lr_scheduler.CosineAnnealingLR object at 0x7f35b45133d0>
+2024-04-03 15:35:36,707 - INFO - DataLoaders initialized
+2024-04-03 15:35:36,708 - INFO - HyperParams initiliazed, starting training...
+2024-04-03 15:37:53,446 - INFO - Epoch: 1 | Loss: 0.0080 | Validation accuracy: 53.915% | Epoch Time: 136.74 secs
+2024-04-03 15:40:10,289 - INFO - Epoch: 2 | Loss: 0.0063 | Validation accuracy: 58.261% | Epoch Time: 136.55 secs
+2024-04-03 15:42:29,005 - INFO - Epoch: 3 | Loss: 0.0058 | Validation accuracy: 58.846% | Epoch Time: 137.09 secs
+2024-04-03 15:44:48,144 - INFO - Epoch: 4 | Loss: 0.0056 | Validation accuracy: 60.240% | Epoch Time: 137.89 secs
+2024-04-03 15:48:58,704 - INFO - Epoch: 5 | Loss: 0.0053 | Training accuracy: 71.354% | Validation accuracy: 56.840% | Epoch Time: 249.32 secs
+2024-04-03 15:51:18,216 - INFO - Epoch: 6 | Loss: 0.0051 | Validation accuracy: 63.026% | Epoch Time: 138.99 secs
+2024-04-03 15:53:37,819 - INFO - Epoch: 7 | Loss: 0.0050 | Validation accuracy: 62.051% | Epoch Time: 138.60 secs
+2024-04-03 15:55:57,096 - INFO - Epoch: 8 | Loss: 0.0049 | Validation accuracy: 63.750% | Epoch Time: 138.53 secs
+2024-04-03 15:58:18,892 - INFO - Epoch: 9 | Loss: 0.0047 | Validation accuracy: 64.113% | Epoch Time: 139.66 secs
+2024-04-03 16:02:30,587 - INFO - Epoch: 10 | Loss: 0.0045 | Training accuracy: 78.101% | Validation accuracy: 64.475% | Epoch Time: 250.16 secs
+2024-04-03 16:04:50,215 - INFO - Epoch: 11 | Loss: 0.0044 | Validation accuracy: 65.143% | Epoch Time: 138.37 secs
+2024-04-03 16:07:10,609 - INFO - Epoch: 12 | Loss: 0.0042 | Validation accuracy: 65.311% | Epoch Time: 138.56 secs
+2024-04-03 16:09:29,571 - INFO - Epoch: 13 | Loss: 0.0041 | Validation accuracy: 66.258% | Epoch Time: 137.79 secs
+2024-04-03 16:11:48,602 - INFO - Epoch: 14 | Loss: 0.0040 | Validation accuracy: 66.592% | Epoch Time: 137.45 secs
+2024-04-03 16:15:59,347 - INFO - Epoch: 15 | Loss: 0.0040 | Training accuracy: 82.197% | Validation accuracy: 67.066% | Epoch Time: 249.52 secs
+2024-04-03 16:18:16,207 - INFO - Epoch: 16 | Loss: 0.0038 | Validation accuracy: 67.428% | Epoch Time: 135.64 secs
+2024-04-03 16:20:35,715 - INFO - Epoch: 17 | Loss: 0.0037 | Validation accuracy: 67.345% | Epoch Time: 138.17 secs
+2024-04-03 16:22:53,241 - INFO - Epoch: 18 | Loss: 0.0036 | Validation accuracy: 68.013% | Epoch Time: 137.01 secs
+2024-04-03 16:25:17,613 - INFO - Epoch: 19 | Loss: 0.0036 | Validation accuracy: 67.512% | Epoch Time: 142.81 secs
+2024-04-03 16:29:37,101 - INFO - Epoch: 20 | Loss: 0.0035 | Training accuracy: 83.737% | Validation accuracy: 67.484% | Epoch Time: 258.96 secs
+2024-04-03 16:29:38,212 - INFO - Train Ended!
+2024-04-03 16:29:38,212 - INFO - Saving train statistics
+2024-04-03 16:29:38,407 - INFO - Save statistics done!

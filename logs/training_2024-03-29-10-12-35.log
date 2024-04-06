@@ -1,0 +1,33 @@
+2024-03-29 10:12:35,927 - INFO - Args parsed succesfully
+2024-03-29 10:12:35,927 - INFO - Params: Namespace(emotion_transform_prob=0.8, epochs=100, exp_name='Augmented_New_Transforms_Features_Extract', fine_tune=False, net_name='resnet18', use_expanded_dataset=False)
+2024-03-29 10:12:36,255 - INFO - Model was initialized and sent to cuda:0
+2024-03-29 10:12:37,918 - INFO - All data has been loaded
+2024-03-29 10:12:37,919 - INFO - Got hyper parametrs for current model:
+2024-03-29 10:12:37,919 - INFO - batch size=128
+2024-03-29 10:12:37,919 - INFO - Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    initial_lr: 0.0002
+    lr: 0.0002
+    maximize: False
+    weight_decay: 2e-05
+)
+2024-03-29 10:12:37,919 - INFO - <torch.optim.lr_scheduler.CosineAnnealingLR object at 0x7f880c582070>
+2024-03-29 10:12:37,920 - INFO - DataLoaders initialized
+2024-03-29 10:12:37,920 - INFO - HyperParams initiliazed, starting training...
+2024-03-29 10:14:45,580 - INFO - Epoch: 1 | Loss: 0.0138 | Validation accuracy: 27.473% | Epoch Time: 127.66 secs
+2024-03-29 10:16:51,491 - INFO - Epoch: 2 | Loss: 0.0126 | Validation accuracy: 30.036% | Epoch Time: 125.81 secs
+2024-03-29 10:18:58,421 - INFO - Epoch: 3 | Loss: 0.0120 | Validation accuracy: 31.011% | Epoch Time: 126.66 secs
+2024-03-29 10:21:06,565 - INFO - Epoch: 4 | Loss: 0.0117 | Validation accuracy: 33.742% | Epoch Time: 127.88 secs
+2024-03-29 10:25:10,209 - INFO - Epoch: 5 | Loss: 0.0115 | Training accuracy: 43.227% | Validation accuracy: 33.296% | Epoch Time: 243.37 secs
+2024-03-29 10:27:18,267 - INFO - Epoch: 6 | Loss: 0.0114 | Validation accuracy: 33.519% | Epoch Time: 127.93 secs
+2024-03-29 10:29:27,060 - INFO - Epoch: 7 | Loss: 0.0113 | Validation accuracy: 33.519% | Epoch Time: 128.66 secs
+2024-03-29 10:31:35,701 - INFO - Epoch: 8 | Loss: 0.0113 | Validation accuracy: 34.466% | Epoch Time: 128.50 secs
+2024-03-29 10:33:44,314 - INFO - Epoch: 9 | Loss: 0.0112 | Validation accuracy: 34.773% | Epoch Time: 128.12 secs
+2024-03-29 10:37:51,070 - INFO - Epoch: 10 | Loss: 0.0111 | Training accuracy: 45.874% | Validation accuracy: 35.247% | Epoch Time: 246.50 secs

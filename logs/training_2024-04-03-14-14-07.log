@@ -1,0 +1,57 @@
+2024-04-03 14:14:07,633 - INFO - Args parsed succesfully
+2024-04-03 14:14:07,633 - INFO - Params: Namespace(emotion_transform_prob=None, epochs=40, exp_name='Expanded_Larger_Version', fine_tune=False, load_byol=False, net_name='dino_v2', use_expanded_dataset=True, verbose=False)
+2024-04-03 14:14:07,847 - INFO - using MLP layer as FFN
+2024-04-03 14:14:14,313 - INFO - Model was initialized and sent to cuda:0
+2024-04-03 14:14:14,315 - INFO - EmotionNet(
+  (nn_model): DinoVisionTransformer(
+    (patch_embed): PatchEmbed(
+      (proj): Conv2d(3, 1024, kernel_size=(14, 14), stride=(14, 14))
+      (norm): Identity()
+    )
+    (blocks): ModuleList(
+      (0-23): 24 x NestedTensorBlock(
+        (norm1): LayerNorm((1024,), eps=1e-06, elementwise_affine=True)
+        (attn): MemEffAttention(
+          (qkv): Linear(in_features=1024, out_features=3072, bias=True)
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls1): LayerScale()
+        (drop_path1): Identity()
+        (norm2): LayerNorm((1024,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+          (drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls2): LayerScale()
+        (drop_path2): Identity()
+      )
+    )
+    (norm): LayerNorm((1024,), eps=1e-06, elementwise_affine=True)
+    (head): Linear(in_features=1024, out_features=7, bias=True)
+  )
+)
+2024-04-03 14:14:19,109 - INFO - All data has been loaded
+2024-04-03 14:14:19,113 - INFO - Got hyper parametrs for current model:
+2024-04-03 14:14:19,113 - INFO - batch size=128
+2024-04-03 14:14:19,113 - INFO - Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    initial_lr: 0.0002
+    lr: 0.0002
+    maximize: False
+    weight_decay: 2e-05
+)
+2024-04-03 14:14:19,113 - INFO - <torch.optim.lr_scheduler.CosineAnnealingLR object at 0x7f34dc1f6160>
+2024-04-03 14:14:19,114 - INFO - DataLoaders initialized
+2024-04-03 14:14:19,114 - INFO - HyperParams initiliazed, starting training...
+2024-04-03 14:54:22,067 - INFO - Epoch: 1 | Loss: 0.0099 | Validation accuracy: 50.320% | Epoch Time: 2402.95 secs
