@@ -128,15 +128,14 @@ To summarize, it looks like EmotionGAN augmentations are not very suited for emo
 
 ### How to Use:
 
-[replace with the project github]
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/DeepLearnProjectPlayground.git
+    git clone https://github.com/reuvensm/Emotion-Detection-Using-EmotionGAN.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd DeepLearnProjectPlayground
+    cd Emotion-Detection-Using-EmotionGAN
     ```
 
 3. Install the required dependencies:
